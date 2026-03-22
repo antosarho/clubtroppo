@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Are there unhelpful mathematical models of economic phenomena? | Club Troppo</title>
+  <link rel="stylesheet" href="../../../../assets/style.css">
+</head>
+<body class="single single-post">
+  <div id="wrapper" class="hfeed">
+    <a href="#content" class="screen-reader-text skip-link">Skip to content</a>
+    <div id="header">
+      <div id="masthead">
+        <div id="branding" role="banner">
+          <div class="static-banner">Static Version of Club Troppo Blog</div>
+          <h1 id="site-title"><span><a href="../../../../index.html" rel="home">Club Troppo</a></span></h1>
+          <div id="site-description">Economic, legal, political and social commentary</div>
+          <a href="../../../../index.html"><img src="../../../../assets/header.jpg" width="940" height="197" alt="Club Troppo"></a>
+        </div>
+        <div id="access" role="navigation">
+          <div class="menu"><ul><li><a href="../../../../index.html">Home</a></li><li><a href="../../../../about-club-troppo/index.html">About</a></li><li><a href="../../../../contact/index.html">Contact</a></li><li><a href="../../../../copyright/index.html">Copyright</a></li><li><a href="../../../../msm-links/index.html">Media Links</a></li><li><a href="../../../../be-pin-posts/index.html">Pin Posts</a></li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          
+<div id="post-13391" class="post post-13391 type-post status-publish hentry">
+  <h1 class="entry-title">Are there unhelpful mathematical models of economic phenomena?</h1>
+  <div class="entry-meta"><span class="meta-prep meta-prep-author">Posted on</span> <a href="index.html" rel="bookmark"><span class="entry-date">February 1, 2013</span></a> <span class="meta-sep">by</span> <span class="author vcard">Paul Frijters</span></div>
+  <div class="entry-utility"><span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../../../../category/economics/index.html">Economics and public policy</a></span></div>
+  <div class="entry-content"><p>Take your bog-standard first-year economics story of why money (sea shells, coins, notes, bank statements) exist. Money, you will be told, is a means of exchange, a store of value, and a unit of accounting, thoughts going back to <a href="http://socserv.mcmaster.ca/~econ/ugcm/3ll3/hume/money.txt">David Hume </a>(18th century) and earlier.</p>
+<p>When explaining the idea of exchange to students you say things like ‘you can’t exchange a hundredth of a sheep for a loaf of bread so you want something to represent the value of a hundredth of a sheep, and in any case it’s a long slog to the market carrying a sheep around’.</p>
+<p>When explaining the idea of a store of value you say things like ‘You would like to be able to consume things when you are old without working when you are old. That means you need to save up wealth in the form of something that doesn’t perish. Sheep perish, gold does not’; and when explaining the unit of value idea you say things like ‘we all think of the value of things in terms of a numeraire, such as that milk costs 1 dollar per liter and flour 2 dollars a kilo. None of us think in terms of 1 liter of milk being worth half a kilo of flour. Given many different products, it is more convenient to think of the value of each of them in terms of something you can compare across these goods. Money performs that role and you will find that even when the unit of money changes (such as moves from the Deutschmark to the Euro) that people will continue to calculate everything back in terms of the old money for many years’.<br/>Simple stories, no? And most students will ‘get the point’ of each of these three stories. They will see the difficulties of exchange with lumpy goods that cannot easily be stored and exchanged, and they will see the point of being able to save up for a later date and that requires some form of storable money.</p>
+<p>Simple though these arguments are, you will be hard-pressed to find mathematical models of them that anyone would recognise as remotely capturing these verbal arguments. It tells you something about the limits of mathematical models to think through why recognisable models of money do not exist. So bear with me as I take you through the actual difficulties of modelling money and how those difficulties end up as unhelpful advise from theoretical economists to policy makers.Think of the actual difficulties involved in modelling the story of money as a medium of exchange. Before even thinking about money, you have to start from a model with exchange. This means you need to model the production of more than one good and you must build in a reason, like comparative advantage, why individuals do not simply produce all the goods they need by themselves. For realism you would want the goods to be lumpy, perishable, and to require long-term investments. After all, sheep herding and crop-growing do not happen overnight and neither sheep nor apples can meaningfully be stored for very long or exchanged in halves.<br/>You immediately hit your first mathematical snag right there: if production is lumpy (you can’t produce half-apples), then you won’t get the simple outcome that someone will spend all his time on what he is best at. An individual could optimally spend his time by producing one sheep and two apples even though he has a comparative advantage in sheep, simply because he can’t make exactly two sheep. If you want lumpiness in your model, you thus would have to solve the problem of how a person would optimally allocate a fixed amount of time over lumpy investment projects. This is known in the Operations Research literature as <a href="http://magma.maths.usyd.edu.au/magma/Examples/node7.html">the knap-sack problem </a> (in which you need to decide which lumpy goods to put into a knapsack of particular size) and it is known to be an ‘NP-hard’ problem. Simply put, you know of such problems that there is a single optimal solution but it may take a long time to actually find it. Solving just that knapsack problem for a single individual is already something that may take a computer years if you choose the bundle of potential goods to be large enough, and there will be cases in which you will find that even with comparative advantage the sheep herders may grow enough apples to not need exchange.<br/>How do you solve that snag, which incidentally arises in all models of production? The reality is that you don’t because solving just that one leaves you with a model in which you can solve little else and in which you are not assured of any real impetus for exchange. Hence you ‘simplify reality’. You thus presume that there is no such thing as a lumpy good and that people spend their time producing a ‘continuous’ amount of goods, say, 3.271 sheep or 14.231 apples. Without lumpiness, people will specialise in making one thing and have a reason to trade.</p>
+<p>Note that you thus have already given up on describing the most intuitive reasons for having money around: you can no longer meaningfully talk about the difficulties of exchanging a hundredth of a sheep for half an apple since you now have presumed a world in which you produce sheep in hundredths and apples in halves.</p>
+<p>Moving on, the next modelling problem you hit is that it must be the case that different individuals happen to want what the other produces, a 'coincidence of wants'. Indeed, you want some kind of place (a market) where people come to exchange what they have produced. In model-land you must answer every counter-factual. You must thus have a reason why traders would use money instead of giving each other credit or just exchanging bundles of good (since goods are now not lumpy, you can just go to the market with your 2/3 sheep and exchange it in one big free-for-all for all the goods you need). Such thoughts may sound absurd to you, but working them through has occupied really good mathematicians for years. It is in fact nigh impossible to solve models in which people do not know exactly beforehand what will happen in a market.</p>
+<p>You see, as soon as you say that a person does not know beforehand what other people have produced and at what prices they might trade, you are in the world of limited information and in the world where it is possible that people make mistakes (go to the market empty handed, produce the wrong things, etc.). You are then in the business of having to specify how people form expectations about what others would do and what prices they would trade at.</p>
+<p>You are then also in the business of working out whether there are perhaps multiple equilibria (i.e. different configurations of the whole economy) and the issue of how people who don’t know each other could actually coordinate on a particular configuration. You then for instance have to contend with the possibility that nobody shows up at the market because they expect nobody else to show up. You have to contend with the possibility that you get the wrong prices, under which there is no specialisation at all.</p>
+<p>You have to contend with the problem that the only people to show up wouldn’t want to trade with each other because they have produced the same thing and you have to figure out how a group of people would actually arrive at a price (or prices). Each of these sub-problems is considered exceptionally hard by theorists: only under very specific mathematical assumptions can you be absolutely guaranteed that the problems above do not occur.</p>
+<p>Hence, what do you do? Well, again, the reality is that you assume away all these problems. You simply make those assumptions that guarantee you that everyone who produces something is ‘magically’ matched up with someone else who has something they want to trade with. Also, you now presume the existence of some kind of all-powerful benevolent entity, say god. You need such an entity to do away with elements in your model you cannot model but need anyway, such as how prices arise before any exchange takes place (if prices change during exchange one gets into exceptionally complicated dynamics where you need to start talking about the expectations that people have of possible price paths). So you invent a god that takes care of such issues. God, in his first incarnation as a Walrasian auctioneer, announces the prices at which everyone is willing to trade, whereby everyone believes god and acts accordingly. God, now in his second role as a benevolent and completely trusted government, then also provides a means of exchange that is not perishable, i.e. money.</p>
+<p>Usually, a third sleight of hand is needed to get a workable model and that is to have a situation in which there is no such thing as a mistake because there is no such thing as expectations that are incorrect. This of course basically presumes away the original problem you were starting out to model, but that is an almost inevitable casualty of the wish to have a tractable economic model.</p>
+<p>What kind of models of money do we end up with? To my taste, the best that mathematicians have come up with is the story that some sheep producers have a craving for eating apples in the night, but they are themselves just innately incapable of producing apples and their sheep always die at the end of the day (i.e. they must be eaten before the end of the day. New ones are only born at the start of the next day). This means that the sheep herder must sell his sheep during the day to the apple maker whilst buying the apples during the night (apples also perish at the end of each half day so he can’t trade during the day). In a modelling sense, that ensures you the ‘coincidence of wants’ you need to have a role for exchange and ensures that sheep herders and apple farmers cannot just trade their produce. By assuming that they not trust each other, but that they do trust the provider of money, you ensure that they do not just trade promises but use money for their trades. Within this kind of basic set-up you can even introduce monetary policy in the form of allowing god to hand out more money to specific groups or to reduce the value of the money in circulation. Whole ‘policy edifices’ have been built upon the basic structure of sheep herders having cravings for apples in the night. For those who are interested, I am talking about the model by <a href="http://home.cc.umanitoba.ca/~jiang2/LagosWright05.pdf">Lagos and Wright </a>(2005) and the many extensions on their basic idea.</p>
+<p>Now, anyone in his right mind would laugh out loud at the story above as it comes nowhere close to the historical stories told about why we have money and what its role is in the economy: big historical problems in the emergence of money concerned the fact that there was no trusted government, and the value of money had a lot to do with the actual costs of information and transportation, costs that the story talked about above had to assume away. Yet the story of apples and sheep above, believe it or not, is one of the dominant stories told in ‘micro-founded’ monetary economics. It is in that kind of model-economy that they talk about money, credit, banks, regulation, etc. If it weren’t for the fact that it is deemed cutting-edge research, you would have to cry.</p>
+<p>I hope you will take my word for it that the problems of generating models in which money exists because of savings and as a numeraire good are equally hard to set up and hence such models don’t exist at all as far as I know.<br/>The value of the actual models of money are mainly as proof of concept, i.e. that you can think of a micro-model in which money emerges and where you can base the emergence of money on at least one of the underlying micro-motivations you think are important for the existence of money (the advantage of having a more varied consumption bundle). It is not the model you would have wanted but at least you can have it in the back of your mind as an example of the micro-mechanisms that are relevant.</p>
+<p>The problem with the monetary model talked about above is that it fits so poorly. It hardly fits the many historical examples we know of the emergence of money, nor does it capture the problems we face today when thinking about money markets (trust in the institutions, the incentive problems inside organisations, the investment problem). Hence it is singularly unsuitable to use as a mental laboratory for the policy problems of today, or even as a descriptive model of the actual roles of money in our economy.</p>
+<p>The problem of poor fit carries over to unhelpful advise: despite the fact that it is such a poor fit to reality, it is the only ‘game in town’ when it comes to micro-models of money. A most unfortunate and destructive phenomenon then appears, which is that the only game in town becomes the truth to a whole set of people making their careers on the back of it.</p>
+<p>All the potential advantages of models become a disadvantage when a poorly-fitting model is taken too seriously. One potential advantage of models is that they can be the codification of previous knowledge and as such a good model is a quick way of conveying a lot of knowledge to the next generation who don’t have to learn what reasons went into the construction of the model in the first place.</p>
+<p>This now becomes a disadvantage: the new generation that looks to write papers ‘on money’ need know nothing about the history of money or its uses today but only need know the dominant model, which turns into a disadvantage because that new generation will come up with twists and extensions of something that is innately unsuitable to answer any interesting question. Yet that new generation will be blissfully ignorant of the uselessness of what they are doing because they, unlike the originators of the first models on money, will lack the historical database in their heads of what actually goes on. They are simply proving their worth by being more acquainted with the mathematical ins and outs of these models than anyone else and that is what supplies them their daily dinner, not whether the model is useful to anyone else.</p>
+<p>Another potential advantage of a good model is that you can make consistent statements instead of waffling on incoherently. One real advantage of model-land is that it is fairly easy to spot someone who is not capable of understanding models. This advantage also becomes a disadvantage in a model that fits poorly because you will see a great proliferation of consistent statements that are based on poor abstractions of real phenomena. You might term this the proliferation of ‘precisely wrong’ statements.</p>
+<p>And it is a cop-out to say that these precisely wrong statements are not intended to be taken literally: despite being mere models, the adherents deliberately use words that convey its supposed usefulness, such as monetary policy, government, banks, etc. The pretense of usefulness pervades each paper and each grant proposal using these models. Worse still, that modelling community is a group with a big incentive to pretend that the assumptions made for convenience are ‘actually true’, i.e. it is a constituency of individuals with an incentive to presume there is no such thing as transaction costs or a trust problem when it comes to money. When such people become important they will poo poo those who make different assumptions and force them to first invest in their models. In short, a poor model that is taken seriously becomes a part of the problem.</p>
+<p>Would you also have the same problems if monetary economics were mainly based on a set of historical case studies and an awareness of the problems faced today by economic actors? Unlikely, because you then at least have set up an ultimate goal of the discipline, which is to understand how the world came to be as it is and to help economic actors shape their world to their advantage, i.e. you are grounding your discipline in historical reality and real world problems. Having said this, one should not be blind to the disadvantage of a more verbal discipline though. The disadvantage is that when knowledge consists of a collection of examples and lessons, there is more room for the wafflers of this world to ply their trade, and there are millions of eager wafflers around.</p>
+<p>Are there any good economic models you might ask? I believe there are and my prime example would be <a href="http://sbcs.weebly.com/uploads/1/1/0/5/1105777/c-ngraphicalanalysis.pdf">Industrial Organisation models</a> of competition and market interaction. These are the Cournot models, Stackleberg models, models of complementary investments in vertical markets, oligopoly models, models of the internet as a platform, etc. The nice thing about these models is that the motivations they presume of their actors (pure greed) are pretty well spot-on and that it is not that hard in reality to see what kind of market interaction is happening, i.e. which of the I/O models to use.</p>
+<p>Though it is hard to measure for a statistician, it is not so hard to spot as a human whether, say, the oil companies are engaging in collusion or not. It is not hard to spot a cartel, or the basic information structure of a market, nor is it hard to spot the structure of investment complementarities. In short, I/O models can do a remarkably good job of describing the particular aspects of reality one can optimally intervene in, which is of course why they are so central to the work of regulation authorities and why, for instance, auction design on the internet is done by mathematically schooled geeks. They need to know nothing of the history of auctions to nevertheless be damned good designers of auctions as long as they understand the models and have learned to spot the market patterns around them.</p>
+<p>There are thus good models out there and the groups of disconnected geeks working on extending them are, often to their own surprise, doing something useful with their lives. We wouldn’t want to go back to waffling in those areas. The problem is thus not the existence of mathematical models per se, but rather that there are aspects of economic reality where the best we can do is a bad model.</p>
+<p>Is money the only area where we can do no better than bad models that are worse than useless when they are taken seriously? Alas, no. What goes for money goes for many economic phenomena. To have an economic model where growth is driven by specialisation (which is what most historical economists believed was the engine of growth) has so far been beyond us, which is why we have ended up with these ridiculous representative agent models. What the pragmatists believe is true about specialisation can’t be modelled by the best minds in math econ land (this is not to say there are no models of specialisation, simply none that get close to illuminating the path-dependence, trust, and institutions that sustain it). Satisfactory ‘des-equilibrium’ models of recessions also simply don’t exist. Models of human behaviour drawing upon more than two of the known ‘irrationalities in our make-up’ are also too hard to solve. The list goes on and on: if one insists on consistent mathematical theorising from ‘micro-foundations’, nearly all of the big drivers of economic growth and economic institutions are beyond our ability to model even remotely realistically.</p>
+<p>Mathematical models are hence in many areas a problem because they fit poorly but nevertheless live a life of their own, taking up valuable mental time of smart people, leading individuals to think about the wrong problems, leading people to think in terms of the wrong assumptions, motivating statisticians to measure the wrong things, and divorcing their discipline from reality.</p>
+<p>Suppose you believe all this, but nevertheless want to make progress in disciplines by doing proper science, differentiating yourself from the wafflers. What is ‘proper science’ in an area where we cannot make much mathematical headway and hence where we can be reasonably certain that every grand story we tell (in maths or in words) has inconsistent parts to it? That’s the subject of a future blog....</p></div>
+</div>
+<div id="comments"><h3 id="comments-title">22 Comments</h3><ol class="commentlist">
+<li class="comment" id="comment-492217">
+  <div id="div-comment-492217">
+    <div class="comment-author vcard">
+      <cite class="fn">desipis</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 1, 2013</div>
+    <div class="comment-body"><p>From the post its not clear as to what constitutes a 'mathematical model'. Does it include models of convenient hypothetical that demonstrate the phenomenon in question, or are you limiting it to modelling of economic phenomenon as it exists in the real world?</p>
+<p>A few quick thoughts on models:<br/>1) We cannot (yet) mathematically model the behaviour of individual humans (psychology)<br/>2) Therefore we cannot even begin to mathematically model the behaviour of groups of people (economics) without making grossly simplified models of human behaviour<br/>3) Thus economic models will be limited in scope and context to situations where human behaviour consistently matches a very simple model. This basically means models are limited to where people put on their economic rationalist masks (e.g. as bankers, investors, etc) and excludes economic activity that is significantly affected by issue such as psychology, culture or politics.</p>
+<p>As for what 'proper science' would be, I would recommend throwing out preconceived notions of how the economy works and going back to the starting point of 'proper science'. Make observations. Importantly these need to be direct observations and not abstract or aggregate values that incorporate pre-existing assumptions about how things work (or for that matter waffly stories that 'feel' right).</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492218">
+  <div id="div-comment-492218">
+    <div class="comment-author vcard">
+      <cite class="fn">Paul Frijters</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 1, 2013</div>
+    <div class="comment-body"><p>Desipis,</p>
+<p>I have in mind models whose use of labels makes it reasonable to interpret them as attempts at describing/explaining/predicting phenomena of economic interest. I am not clear what alternatives you have in mind. Your use of the word 'demonstrate' suggests you think of models that prove things beyond doubt about real-world phenomena. I would call those really useful descriptive/predictive models.</p>
+<p>The main practical issue with your suggested alternative is the question what you would be observing for there is so much to observe!? As some philosophers say, there are no facts without theory.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492222">
+  <div id="div-comment-492222">
+    <div class="comment-author vcard">
+      <cite class="fn">conrad</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 1, 2013</div>
+    <div class="comment-body"><p>This sort of stuff has been going on throughout history in any number of areas, and not just in economics with the futile use of maths -- I think phlogiston is a classic example of this where smart people wasted oodles of time chasing the wrong idea. A modern day example would be the assumption that stress causes stomach ulcers. I'd hate to think how many millions of dollars were poured into grants looking at that (it's fun to do a search on the old papers!). In my books, it's just another example of what psychology people like to call functional fixedness, and also the fact people don't like to think they wasted years looking at an entirely worthless area that didn't even help find new problems, let alone solve old ones.</p>
+<p>Perhaps economics is bad because it's full of blokes that like to prove how smart they are to each other by doing ever more complicated maths. This is exactly what happens in systems neuroscience where people try and think of ever more complicated ways to describe bits of the brain. Really smart people do really hard maths in this area. So hard in fact that I think a lot of it is only tractable to the people that actually think of it. In addition, if you try hard enough to convince people this might be worthwhile, you might get an E500 Million grant -- and then everyone will think you really must be smart, apart from the people in the area who know what you are really doing. If you want a chuckle about this, look at the comment from Dario Ringach, who does know the feasability of the project that got the E500 million (here: http://labrigger.com/blog/2013/01/25/markrams-millions/)</p>
+<p>That being said, I'm in an area which doesn't love mathematical models so much (probably because people just don't understand them), and I'm not sure that this is much better. People just think of bad verbal theories that can somehow fit all data sets (just think of how long Freud lasted).</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492237">
+  <div id="div-comment-492237">
+    <div class="comment-author vcard">
+      <cite class="fn">Cameron Murray</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 1, 2013</div>
+    <div class="comment-body"><p>Top post.  I agree with pretty much everything.  Although I think you give too much credit to models of competition that assume competition has already happened.  These models are exactly like the ones you describe once you start digging into all the assumptions needed.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492246">
+  <div id="div-comment-492246">
+    <div class="comment-author vcard">
+      <cite class="fn">desipis</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 1, 2013</div>
+    <div class="comment-body"><p>Paul,</p>
+<blockquote>what you would be observing for there is so much to observe!?</blockquote>
+<p>I guess my comment was based on my experience with other sciences. Physics students do experiments in which they bounce balls, compress strings and bend light. Chemistry students neutralise acids, filtrate solutions and burn metals. Biology students grow plants, collect bugs and cut up bodies. Even psychology students get to probe some minds.</p>
+<p>I haven't studied a lot of economics, but from the subjects I studied at university I got the distinct impression there is no significant 'prac' or 'lab' component. This means there's a definitive lack of studying how the theories match the tangible reality. Sure you can philosophise about how there's no such thing as facts without theory, but the pragmatic approach of other sciences is to start at direct observations using physical senses and intuitive perceptions.</p>
+<p>How many economic students spend time observing shoppers when learning about consumer demand? How many observe the process of a real business deciding the quality of product to make and price to sell at when considering supply? How many interact or observe the unemployed or HR departments when learning about unemployment? If the things an economic student learns from are waffly stories and abstract data then it's not too surprising that the work economists produce often is based on some abstract fiction rather than the real world. If you want economics to be a science, then you've got to make sure economists go through the hard yards of making is a science.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492293">
+  <div id="div-comment-492293">
+    <div class="comment-author vcard">
+      <cite class="fn">conrad</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 2, 2013</div>
+    <div class="comment-body"><p>One of the reasons I started reading blogs was to get some idea of how disciplines differ, so I've thought about that sort of thing too. I think part of the difference stems from the type of questions different disciplines ask. There are really obvious practical questions you might like to ask in economics, but you need enormous and very hard to collect data sets to look at them (just look at the debates between whether countries should go into deficit and why etc.). With this sort of data, the only way of interpreting it is often via big convoluted arguments and equations. With some other disciplines, you can basically collect as much data as you want, and often answer more answerable questions (e.g., "what happens when you smash two atoms together"). This is not to say other disciplines don't have grand fairy-tales they hope will one day be correct (e.g., out of ignorance, I'll say string theory here -- astrophysics also had some too which turned out to be correct I believe). I also think it is very hard to collect good control conditions in many areas of economics (e.g., "what would the economy of country Y look like if they didn't use a stimulus package?". This can't be done since you obviously can't run and not-run the same thing -- you can only use cross-country comparative data, and all the problems that come with it). This is unlike other areas where you have standard effect/placebo and more complicated designs because you can get that sort of data easily.</p>
+<p>Apart from just difference in questions and ease of data acquisition, the other difference appears to be what constitutes an acceptable study, which differs for no real obvious reasons to me. Let's say I'm interested in a question like "Does parenting style X lead to gains in Y". Both economists and psychologists might like to answer this question. If you were from psychology (and I believe biology is similar), you just go out and find 100 people and measure it, find another 100 to use as a control, and then try and control for a few variables you think are important (of the 100 that there probably are). Then 50 more people do a similar study to yours, except control for different variables they think are important. What you find is that, after 100 studies (none which fully randomized etc.), almost all say the same thing, and so you just accept that even though 3 studies didn't find anything and there was no super study that controlled everything (and there never will be, this is the nature of collecting data from humans). I think in economics (someone can correct me here if I'm wrong -- this is mainly from chatting with economists about these sorts of issues), this sort of approach doesn't happen as much, as they like to have much better controlled studies to start (which is impossible to do in some areas). So instead they think of big complex models with lots of maths to impress their friends with, which is not to say some of those models arn't very excellent, I'm sure some are.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492299">
+  <div id="div-comment-492299">
+    <div class="comment-author vcard">
+      <cite class="fn">Paul frijters</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 2, 2013</div>
+    <div class="comment-body"><p>Desirous, Conrad,</p>
+<p>I agree with both. Desipis' point that a science about economic phenomena should include having its practitioners learn to observe those actual phenomena as close as possible is really important. There are many economists who feel the same way and there are whole departments where this is what they force all their PhDs to do. Yet, the incentives are still such that for most academics investments in observations are not worthwhile. Indeed, they can be alienating. And one can see why: inherent in the peer review system is that the ultimate influence on careers is the ability to please peers. Not the final consumers of economic knowledge. It's a problem in every science that you then get incrowds divorced from reality.</p>
+<p>Conrad' point about just how hard it is to get anywhere in economics is spot on. If we could do randomised control trials with inflation and bank regulation, we would, but all we have to go on are imperfect data and imperfect models plus historical story telling. The question is more what to do when certainty is so elusive and what to do when the best one can come up in terms of models is inferior in terms of use to historical story telling and institutional muddling on.<br/>In many fields we do in fact have a 100 studies from which we distill some average knowledge. The problem is often that studies really disagree and one uses an implicit overall theory to help weigh the different pieces of data.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492302">
+  <div id="div-comment-492302">
+    <div class="comment-author vcard">
+      <cite class="fn">derrida derider</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 2, 2013</div>
+    <div class="comment-body"><p>A good post with many good things in it.  But one really important point you miss is that is often not obvious <em>in advance </em>that a modelling approach will be "worse than useless".  It often only becomes apparent to an impartial observer after an awful lot of time and effort has been expended on it and a community of belivers has already formed.  In which case the beast will be so complex and difficult that there will be very few who can understand it anyway, and as you point out those who can understand it will not be impartial.</p>
+<p>IMO that is pretty much the story of RBC, f'rexample.  Anyone who read Lucas in the '70s and '80s could not but be impressed by the work (that's a seriously powerful mind at work folks), and the methodological deficiencies of previous approaches that he pointed to.  Being honest, you would probably have thought all that Prescott stuff was a promising start to modelling business cycles properly (though no-one using even casual empiricism could have taken it as the final answer, of course - too many implausibilities such as no involuntary unemployment).  It's really only the passage of time that has revealed it as a dead-end.</p>
+<p>As for avoiding NP-hard problems as Jacques suggest, that's not really doable because its not a matter of "getting the answer within a few percent" - it can be hard to even get the SIGN of important control variables right.  And real-life outcomes for millions, billions even, of people depend on it.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492313">
+  <div id="div-comment-492313">
+    <div class="comment-author vcard">
+      <cite class="fn">desipis</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 2, 2013</div>
+    <div class="comment-body"><p>I don't think people hate particular distributed algorithms so much as they hate the self-interested naivety required to believe a single abstract concept, regardless of how elegant, is sufficient to govern the bulk of activity in a human society.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492388">
+  <div id="div-comment-492388">
+    <div class="comment-author vcard">
+      <cite class="fn">Marks</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 3, 2013</div>
+    <div class="comment-body"><p>I agree that the models might need to be simple.</p>
+<p>However, that does not exclude useful or practical.</p>
+<p>Power and Water networks serve millions of individuals with tens of millions of decisions (taps/power points), and with massive system complexity.  Yet they can be modelled to all practical purposes.  The arguments that you make about psychology and simplification exist there too. There are gross simplifications made.  One of the secrets is that even with gross simplifications, most network models can predict stable or unstable conditions , or problem nodes and connections which stand out like the proverbial dog's.  So, if you can see that a particular combination of factors leads to wild instability (bubble/crash) then you have all the information needed to act without needing the precise numbers.  For example, whether the modelled overvoltage on a 240V line was 50kV or 30kV for 2 milliseconds or three is pretty irrelevant - you are fried.  A system operator modelling the situation that gave rise to this knows that they have to provide protection at that point.     This means that even a model which is +/- 20% in prediction of the outcome still provides effective management information.</p>
+<p>One of the biggest obstacles to achieving something is to say that it cannot be done.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492396">
+  <div id="div-comment-492396">
+    <div class="comment-author vcard">
+      <cite class="fn">john r walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 3, 2013</div>
+    <div class="comment-body"><p>Paul<br/>"Yet, the incentives are still such that for most academics investments in observations are not worthwhile. Indeed, they can be alienating. And one can see why: inherent in the peer review system is that the ultimate influence on careers is the ability to please peers"   <br/>Too right.</p>
+<p>Despis and Nicholas <br/>Until about 9 years ago I had little to do with groups,  9 years of experience has led me to believe that economics seriously underestimates  just how much of group behavior is skewed by the seriously insane .  As Dostoyevsky  observed "the formula two plus two equals five has a certain appeal".. to many group thinkers.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492405">
+  <div id="div-comment-492405">
+    <div class="comment-author vcard">
+      <cite class="fn">desipis</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 3, 2013</div>
+    <div class="comment-body"><p>Marks,</p>
+<p>I wasn't trying to suggest that models are never useful. Power consumption is one of those circumstances where the evidence strongly supports simple models of human behaviour being accurate and practical, and so is covered under my third point as situation where modelling is useful. The bulk of the modelling complexity for power networks fits into the well understood physics and engineering category.</p>
+<p>The approach to managing the unpredictable element of human behaviour is to over-engineer or "gold plate" the network to cover all likely outcomes of the unpredictable behaviour. This is only really possible because the range of possible behaviours is constrained to a simple one dimensional value of power consumption, and (importantly) the behaviour is in no way part of the sort of  feedback mechanisms required for market modelling. Once you extend behaviour beyond simple consumption things become <a href="http://www.theaustralian.com.au/national-affairs/carbon-tax/rooftop-solar-panels-overloading-electricity-grid/story-fn99tjf2-1226165360822">more complex</a>,  more <a href="http://en.wikipedia.org/wiki/Smart_meter#Lack_of_savings_in_results">difficult to predict</a> and therefore manage.</p>
+<p>I do take your point that even grossly inaccurate models can provide useful insight or information when interpreted qualitatively. For example, in macroeconomics it's reasonable to use a model to show that changing interest rates will put pressure on exchange rates, however attempting to use a model to predict the actual exchange rate would be more problematic. I guess it'll be an ongoing struggle to manage the <a href="http://online.wsj.com/article/SB10001424127887323374504578219873933502726.html">overly persuasive power of mathematics</a>.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492456">
+  <div id="div-comment-492456">
+    <div class="comment-author vcard">
+      <cite class="fn">derrida derider</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 4, 2013</div>
+    <div class="comment-body"><p>Yes, but like all those DSGE models these have to be "calibrated" to real life, which is a very unscientific thing to do because you're just choosing the local optima that fit the past without understanding WHY that optimum.  Because you have not captured the "deep mechanism" (in Lucas' terms) that led to that particular optimum being arrived at you cannot be sure that a very small perturbation in the future won't get you to a radically diifferent place.</p>
+<p>Really, agent-based simulation has done no better - and for good theoretic reasons is likely to do no better - than DSGE in producing a model that will let you run an economy.  Some problems really are both:<br/>- important for real life<br/>- inherently very hard</p>
+<p>None of which is a criticism of formal modelling in general, because the alternative to rigorous modelling with clearly stated assumptions is not no modelling, but sloppy modelling with unexamined assumptions - ie intuition.  And the world has suffered a lot from rulers who have "trusted their intuition".</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492483">
+  <div id="div-comment-492483">
+    <div class="comment-author vcard">
+      <cite class="fn">Paul Frijters</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 4, 2013</div>
+    <div class="comment-body"><p>"I’m in an area which doesn’t love mathematical models so much (probably because people just don’t understand them), and I’m not sure that this is much better. People just think of bad verbal theories that can somehow fit all data sets (just think of how long Freud lasted)."</p>
+<p>that really is the key question: what is the alternative? The one 'honest thing' about useless models is that the onlooker can see exactly what is going on.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492484">
+  <div id="div-comment-492484">
+    <div class="comment-author vcard">
+      <cite class="fn">Paul Frijters</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 4, 2013</div>
+    <div class="comment-body"><p>I like them as models not because every assumption is good but rather that the mental picture they paint of the regulation problems is pretty much spot on: the key problems and drivers are in there, and the 'solution' in the model is pretty much what you want to do in practise. not always of course, but often.
+For instance, thinking about your own research (rent seeking) I would say that the mainstream 'theoretical solutions' are pretty much the ones you want already (i.e. a higher contestability of the rents!).</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-492664">
+  <div id="div-comment-492664">
+    <div class="comment-author vcard">
+      <cite class="fn">Marks</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 5, 2013</div>
+    <div class="comment-body"><p>I guess the first question is: 'Has anyone really tried?'</p>
+<p>The next point, and back on the topic, is that the unhelpful models are ones that ignore dynamics.  ie models that assume that systems are static and that realistic outcomes can be modelled using those static system models rather than dynamic models.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-493226">
+  <div id="div-comment-493226">
+    <div class="comment-author vcard">
+      <cite class="fn">Nicholas Gruen</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 10, 2013</div>
+    <div class="comment-body"><p>Paul,</p>
+<p>Fabulous post. And sorry to turn up so late - I'll now have to go and read the sequel. It’s always great when someone goes beyond the usual slogans and nails some very clear, specific examples of what they’re talking about. Providing ‘micro-foundations’ for the discussion if you like.  And your examples are fantastic.</p>
+<p>A few points.</p>
+<p>It’s worth saying which is the master discipline – discursive or formal analysis – and the answer is discursive analysis. Formal analysis is the laser – very specialised logical deductive analysis which can help detect inconsistencies in waffle.  But it’s always important to set the formal analysis up within waffle – to ‘motivate’ the formal analysis.  Thus in Hicks Value and Capital, there’s lots of careful writing justifying particular choices made with the formal modelling. Here's a particularly pivotal passage in the book. <br/><blockquote>[In the presence of scale economies,] [t]here must be something to stop the indefinite expansion of the firm, but it can just as well be stopped by the limitation of the market as by rising marginal costs.  . . . It is, I believe, only possible to salvage anything from this wreck - and it must be remembered that the threatened wreckage is that of the greater part of economic theory - if we can assume that the markets confronting most . . . firms . . . do not differ very greatly from perfectly competitive markets.  . . .  At least this get-away seems well worth trying.  We must be aware, however, that we are taking a dangerous step, and probably limiting to a serious extent the problems with which our subsequent analysis will be fitted to deal.  Personally, however, I doubt if most of the problems we shall have to exclude for this reason are capable of much useful analysis by the methods of economic theory.</blockquote></p>
+<p>This level of theoretical awareness has fallen away in economics. Indeed, economics is truly strange in its use of the word 'theory' - meaning purely formal structures. I can't think of another social science like that. The 'theory' of history, or sociology is reflection on the methodological foundations of the discipline or a particular example of it. I'd think that would be the case in virtually all disciplines, though perhaps I need to be corrected.</p>
+<p>In any event, lots of papers present very brief lit review and ‘motivation’, then the model, then the conclusion, then the call for more research. The idea of the discursive intelligence being alive throughout the formal analysis is pretty much gone. That's pretty disastrous, and the kind of methodological background that enabled RBC to get going. While some of the basic ideas behind RBC were worth trying to explore further, it's never got out of the R&amp;D stage - pretty obviously if it models the Great Depression as a spontaneous holiday. Likewise DSGE. It's distressing that a major part of an economic education is teaching some judgement about the very thing that Paul's talking about - which is the judgement to have some idea of where formal models (either in general or regarding particular models) can be useful and where that's implausible. Alas that's not taught or much deliberated on.</p>
+<p>Even someone like Krugman who likes to ‘tell a story’ with his formal modelling – I’m talking of his old strategic trade theory and geography days – is pretty flip about it all saying that you have to make ‘silly’ assumptions to get models out – so it must be worthwhile. This distinction between the formal and the discursive ramifies right down through Western culture – it’s Plato v Aristotle. It’s also the hedgehog versus the fox. And in economics if you’re handing out policy advice, if don’t want to be a menace to society you need to be a fox, not a hedgehog.</p>
+<p>There’s a deep problem here regarding the political economy of the discipline (I’m talking of economics here.)  We’ve ‘marketised’ the status system in the discipline so you have to get high status journal articles to get promotion. But that would have run lots of great economists out of town. I’m thinking of Coase who barely published – but admittedly published important things when he did, Hayek, who likewise had very few publications in big journals.</p>
+<p>Back when my Dad was an academic the system was much more organic. Really good people were generally given a lot of slack and then we saw what they came up with. Of course the downside is that lots of mediocre people got a lot of slack and lazy people too. So now academics are harder working, but they’re driven mad by needing to keep up their publications, and play the rat race. I think that’s more damaging than the obvious inefficiency of the previous system. Anyway, that’s not really my point – and not only will lots of people disagree with me, but I’ll readily admit I don’t really know (neither do they).</p>
+<p>But we can ask, what can be done about the current rat race and the fact that it leaves no-one giving a toss about the apex of the discipline – whether it’s focused on usefulness, or whether it’s gone off on some OCD frolic.  I suggested in <a href="http://clubtroppo.lateraleconomics.com.au/2012/12/01/this-weeks-column-the-corruption-of-our-intellectual-culture/">this op ed</a> that there is a need for public spirit.  This sounds hopelessly old fashioned I know. All I can say is that my father would always apply that as a criterion of value in his own and other people’s work and it’s the criterion I apply to my own work. It’s an ethical value – and such an ethical value traditionally sits at the apex of professions as they came to be conceptualised in the 19th and early 20th centuries.</p>
+<p>Alas, no more.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-493240">
+  <div id="div-comment-493240">
+    <div class="comment-author vcard">
+      <cite class="fn">nottrampis</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 11, 2013</div>
+    <div class="comment-body"><p>Nick,</p>
+<p>That was fabulous.</p>
+<p>worth a post of its own in fact.<br/>This is what makes 'blogging' so enjoyable.<br/>You read a comment and become so better educated.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-493242">
+  <div id="div-comment-493242">
+    <div class="comment-author vcard">
+      <cite class="fn">john r walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 11, 2013</div>
+    <div class="comment-body"><p>"I think that’s more damaging than the obvious inefficiency of the previous system." 
+Is that because it creates so much 'activity/noise' that every thing,  good bad and indifferent  all looks the same?</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-493255">
+  <div id="div-comment-493255">
+    <div class="comment-author vcard">
+      <cite class="fn">Paul Frijters</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 11, 2013</div>
+    <div class="comment-body"><p>"The idea of the discursive intelligence being alive throughout the formal analysis is pretty much gone. "</p>
+<p>Very true and it is somewhat odd at first that this would be so because 'discursive intelligence' is not at all dead when people discuss things during seminars or when supervisors and PhDs talk things through, or even when people are discussing things in policy land. It is dead in our academic writings though and the reason for it is that discursive arguments are easy to criticize and hence do not survive the intense competition.</p>
+<p>Calling for moral 'revivals' is all good and well, but this has to be backed up with real incentives to stick. In many ways the trend seems in the wrong direction with academics less and less involved (and less welcome!) in policy formation. You see lots of internet sites where academic economists try to advocate policy or comment upon policy, so our public spirit is alive and well. The question is whether it is being rewarded...</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-494004">
+  <div id="div-comment-494004">
+    <div class="comment-author vcard">
+      <cite class="fn">Keith Duddy</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 22, 2013</div>
+    <div class="comment-body"><p>Thanks... A great read, and it cleared up a few questions I've had in the back of my mind for a while. I do modelling for a living - but it's usually of software, or systems to support "the real world" by software. In databases 101 we were taught to call what we were modelling with relational tables a "Universe of Discourse (UoD)", presumably because it was different from the physical universe around us. It's a shame some economists can't make that distinction.</p>
+<p>|&lt;</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-508816">
+  <div id="div-comment-508816">
+    <div class="comment-author vcard">
+      <cite class="fn">Nicholas Gruen</cite>
+    </div>
+    <div class="comment-meta commentmetadata">August 22, 2013</div>
+    <div class="comment-body"><p>Thanks.</p></div>
+  </div>
+</li>
+</ol></div>
+
+        </div>
+      </div>
+      
+    <div id="primary" class="widget-area" role="complementary">
+      <ul class="xoxo">
+        <li class="widget-container">
+          <h3 class="widget-title">About</h3>
+          <p>Economic, legal, political and social commentary.</p>
+        </li>
+        <li class="widget-container">
+          <h3 class="widget-title">Categories</h3>
+          <ul><li><a href="../../../../category/economics/index.html">Economics and public policy</a> <span class="widget-count">(1866)</span></li><li><a href="../../../../category/uncategorized/index.html">Uncategorized</a> <span class="widget-count">(1445)</span></li><li><a href="../../../../category/uncategorised/index.html">Uncategorised</a> <span class="widget-count">(1118)</span></li><li><a href="../../../../category/politics-national/index.html">Politics - national</a> <span class="widget-count">(1000)</span></li><li><a href="../../../../category/politics-international/index.html">Politics - international</a> <span class="widget-count">(624)</span></li><li><a href="../../../../category/history/index.html">History</a> <span class="widget-count">(397)</span></li><li><a href="../../../../category/law/index.html">Law</a> <span class="widget-count">(383)</span></li><li><a href="../../../../category/life/index.html">Life</a> <span class="widget-count">(383)</span></li><li><a href="../../../../category/philosophy/index.html">Philosophy</a> <span class="widget-count">(383)</span></li><li><a href="../../../../category/political-theory/index.html">Political theory</a> <span class="widget-count">(375)</span></li><li><a href="../../../../category/society/index.html">Society</a> <span class="widget-count">(300)</span></li><li><a href="../../../../category/missing-link/index.html">Missing Link</a> <span class="widget-count">(269)</span></li><li><a href="../../../../category/cultural-critique/index.html">Cultural Critique</a> <span class="widget-count">(262)</span></li><li><a href="../../../../category/it-and-internet/index.html">IT and Internet</a> <span class="widget-count">(258)</span></li><li><a href="../../../../category/media/index.html">Media</a> <span class="widget-count">(232)</span></li><li><a href="../../../../category/education/index.html">Education</a> <span class="widget-count">(219)</span></li><li><a href="../../../../category/humour/index.html">Humour</a> <span class="widget-count">(206)</span></li><li><a href="../../../../category/films-and-tv/index.html">Films and TV</a> <span class="widget-count">(193)</span></li></ul>
+        </li>
+        <li class="widget-container">
+          <h3 class="widget-title">Posts by Author</h3>
+          <ul><li><a href="../../../../author/nicholas-gruen/index.html">Nicholas Gruen</a> <span class="widget-count">(3063)</span></li><li><a href="../../../../author/ken-parish/index.html">Ken Parish</a> <span class="widget-count">(1440)</span></li><li><a href="../../../../author/don-arthur/index.html">Don Arthur</a> <span class="widget-count">(505)</span></li><li><a href="../../../../author/paul-frijters/index.html">Paul Frijters</a> <span class="widget-count">(347)</span></li><li><a href="../../../../author/mark-bahnisch/index.html">Mark Bahnisch</a> <span class="widget-count">(272)</span></li><li><a href="../../../../author/james-farrell/index.html">James Farrell</a> <span class="widget-count">(159)</span></li><li><a href="../../../../author/tony-harris/index.html">Tony Harris</a> <span class="widget-count">(152)</span></li><li><a href="../../../../author/geoff-honnor/index.html">Geoff Honnor</a> <span class="widget-count">(136)</span></li><li><a href="../../../../author/david-walker/index.html">David Walker</a> <span class="widget-count">(124)</span></li><li><a href="../../../../author/richard-tsukamasa-green/index.html">Richard Tsukamasa Green</a> <span class="widget-count">(121)</span></li><li><a href="../../../../author/fred-argy/index.html">Fred Argy</a> <span class="widget-count">(113)</span></li><li><a href="../../../../author/wicking/index.html">Wicking</a> <span class="widget-count">(110)</span></li><li><a href="../../../../author/wayne-wood/index.html">Wayne Wood</a> <span class="widget-count">(105)</span></li><li><a href="../../../../author/rex-ringschott/index.html">Rex Ringschott</a> <span class="widget-count">(95)</span></li><li><a href="../../../../author/sophie-masson/index.html">Sophie Masson</a> <span class="widget-count">(67)</span></li><li><a href="../../../../author/cam/index.html">Cam</a> <span class="widget-count">(63)</span></li><li><a href="../../../../author/ingolf-eide/index.html">Ingolf Eide</a> <span class="widget-count">(52)</span></li><li><a href="../../../../author/scott-wickstein/index.html">Scott Wickstein</a> <span class="widget-count">(43)</span></li><li><a href="../../../../author/unknown/index.html">Unknown</a> <span class="widget-count">(34)</span></li><li><a href="../../../../author/chris-lloyd/index.html">Chris Lloyd</a> <span class="widget-count">(33)</span></li><li><a href="../../../../author/paul-bamford-aka-gummo-t/index.html">Paul Bamford (aka Gummo T)</a> <span class="widget-count">(33)</span></li><li><a href="../../../../author/stephen-hill/index.html">Stephen Hill</a> <span class="widget-count">(24)</span></li><li><a href="../../../../author/john-r-walker/index.html">john r walker</a> <span class="widget-count">(20)</span></li><li><a href="../../../../author/patrick/index.html">Patrick</a> <span class="widget-count">(20)</span></li><li><a href="../../../../author/rafe-champion/index.html">Rafe Champion</a> <span class="widget-count">(18)</span></li><li><a href="../../../../author/saul-eslake/index.html">Saul Eslake</a> <span class="widget-count">(16)</span></li><li><a href="../../../../author/shaun-cronin/index.html">Shaun Cronin</a> <span class="widget-count">(16)</span></li><li><a href="../../../../author/roop-sandhu/index.html">Roop Sandhu</a> <span class="widget-count">(13)</span></li><li><a href="../../../../author/dr-troppo/index.html">Dr Troppo</a> <span class="widget-count">(12)</span></li><li><a href="../../../../author/peter-whiteford/index.html">Peter Whiteford</a> <span class="widget-count">(12)</span></li><li><a href="../../../../author/antonios-sarhanis/index.html">Antonios Sarhanis</a> <span class="widget-count">(10)</span></li><li><a href="../../../../author/bruce-bradbury/index.html">Bruce Bradbury</a> <span class="widget-count">(10)</span></li><li><a href="../../../../author/backroom-girl/index.html">Backroom Girl</a> <span class="widget-count">(7)</span></li><li><a href="../../../../author/john-walker/index.html">john Walker</a> <span class="widget-count">(7)</span></li><li><a href="../../../../author/danielle-mccredden/index.html">Danielle McCredden</a> <span class="widget-count">(6)</span></li><li><a href="../../../../author/b-model-baby/index.html">B Model Baby</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/damian-jeffree/index.html">Damian Jeffree</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/gaby/index.html">Gaby</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/julia/index.html">Julia</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/seamus-c/index.html">Seamus C</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/jc/index.html">JC</a> <span class="widget-count">(4)</span></li><li><a href="../../../../author/luke-slawomirski/index.html">Luke Slawomirski</a> <span class="widget-count">(4)</span></li><li><a href="../../../../author/paul-watson/index.html">Paul Watson</a> <span class="widget-count">(4)</span></li><li><a href="../../../../author/james-wheeldon/index.html">James Wheeldon</a> <span class="widget-count">(3)</span></li><li><a href="../../../../author/jen/index.html">Jen</a> <span class="widget-count">(3)</span></li><li><a href="../../../../author/paul-martin/index.html">Paul Martin</a> <span class="widget-count">(3)</span></li><li><a href="../../../../author/darlene/index.html">Darlene</a> <span class="widget-count">(2)</span></li><li><a href="../../../../author/davidsligar/index.html">davidsligar</a> <span class="widget-count">(2)</span></li><li><a href="../../../../author/ellenbroad/index.html">ellenbroad</a> <span class="widget-count">(2)</span></li><li><a href="../../../../author/mike-waller/index.html">Mike Waller</a> <span class="widget-count">(2)</span></li><li><a href="../../../../author/david-coles/index.html">David Coles</a> <span class="widget-count">(1)</span></li><li><a href="../../../../author/joshua-gans/index.html">Joshua Gans</a> <span class="widget-count">(1)</span></li><li><a href="../../../../author/meika-loofs-samorzewski/index.html">meika loofs samorzewski</a> <span class="widget-count">(1)</span></li><li><a href="../../../../author/sam-roggeveen/index.html">Sam Roggeveen</a> <span class="widget-count">(1)</span></li></ul>
+        </li>
+      </ul>
+    </div>
+
+    </div>
+    <div id="footer" role="contentinfo">
+      <div id="colophon">
+        <div id="site-info"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

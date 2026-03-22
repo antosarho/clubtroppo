@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cracking the code: How to tell what News Corp really thinks about the price of links | Club Troppo</title>
+  <link rel="stylesheet" href="../../../../assets/style.css">
+</head>
+<body class="single single-post">
+  <div id="wrapper" class="hfeed">
+    <a href="#content" class="screen-reader-text skip-link">Skip to content</a>
+    <div id="header">
+      <div id="masthead">
+        <div id="branding" role="banner">
+          <div class="static-banner">Static Version of Club Troppo Blog</div>
+          <h1 id="site-title"><span><a href="../../../../index.html" rel="home">Club Troppo</a></span></h1>
+          <div id="site-description">Economic, legal, political and social commentary</div>
+          <a href="../../../../index.html"><img src="../../../../assets/header.jpg" width="940" height="197" alt="Club Troppo"></a>
+        </div>
+        <div id="access" role="navigation">
+          <div class="menu"><ul><li><a href="../../../../index.html">Home</a></li><li><a href="../../../../about-club-troppo/index.html">About</a></li><li><a href="../../../../contact/index.html">Contact</a></li><li><a href="../../../../copyright/index.html">Copyright</a></li><li><a href="../../../../msm-links/index.html">Media Links</a></li><li><a href="../../../../be-pin-posts/index.html">Pin Posts</a></li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          
+<div id="post-34647" class="post post-34647 type-post status-publish hentry">
+  <h1 class="entry-title">Cracking the code: How to tell what News Corp really thinks about the price of links</h1>
+  <div class="entry-meta"><span class="meta-prep meta-prep-author">Posted on</span> <a href="index.html" rel="bookmark"><span class="entry-date">February 21, 2021</span></a> <span class="meta-sep">by</span> <span class="author vcard">David Walker</span></div>
+  <div class="entry-utility"><span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../../../../category/politics-national/index.html">Politics - national</a>, <a href="../../../../category/it-and-internet/index.html">IT and Internet</a>, <a href="../../../../category/economics/index.html">Economics and public policy</a>, <a href="../../../../category/regulation/index.html">regulation</a>, <a href="../../../../category/media/index.html">Media</a>, <a href="../../../../category/business/index.html">Business</a>, <a href="../../../../category/web-and-government-2-0/index.html">Web and Government 2.0</a>, <a href="../../../../category/information/index.html">Information</a>, <a href="../../../../category/intellectual-property/index.html">Intellectual Property</a>, <a href="../../../../category/bullshit/index.html">Bullshit</a></span></div>
+  <div class="entry-content"><h3><p>News Corp is telling us what Google should really pay for linking to its sites. It's telling us in code – HTML code. And the answer is ... $0.00.</p></h3>
+<hr/>
+<p><img alt="It's in the code" class="wp-image-34662 alignright" height="272" src="../../../../wp-content/uploads/2021/02/important-meta-tags.jpg" width="652"/></p>
+<p><em>What is an Internet link worth to the linker?</em> For most of the Internet's life, this question has been pointless. On the Internet, linkers have paid nothing for the links they code into websites. Sometimes the linker got paid, because they displayed ads by agreement with the target site. But linkers never paid for links. Rather, links have been desired and sought, as visible votes on confidence in a web page's worth. Indeed, understanding that links were votes was what made Google the world's biggest search engine.</p>
+<p>In 2021, the Australian government declared, against all the evidence, that this was completely wrong. It passed a "news media bargaining code", which threw this linking-is-free philosophy out the window (<a href="https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/bd/bd2021a/21bd048">summary here</a>). And other nations seem set to follow: at the end of January 2022, the UK government was <a href="https://www.dailymail.co.uk/news/article-10455671/Now-tech-giants-Google-Facebook-forced-pay-newspapers-stories.html">reportedly considering legislation explicitly modelled on Australia's</a>.</p>
+<p>Australia's competition regulator, the ACCC, dreamed up the Australian code. It requires effective agreement about the price paid <em>to the linkee</em> for a link that goes from a digital "platform" like Google or Facebook to a news site like those of News Corp or Nine/Fairfax (<a href="https://www.acma.gov.au/register-eligible-news-businesses">"eligible news businesses" listed here</a>). And if the parties don't agree, <a href="../../20/why-final-offer-arbitration-is-russian-roulette-for-google/index.html">an arbitrator has to decide between their two offers</a>.</p>
+<p>(In June 2021, Reuters reported ACCC chief Rod Simms as saying that <a href="https://www.reuters.com/business/media-telecom/australia-antitrust-boss-rejects-claim-big-tech-law-is-favour-news-corp-2021-06-10/">the code's negotiating system was actually proposed by News Corp</a>. They don't quote him, though, so it's not entirely clear what he actually said.)</p>
+<p>News Corp and other media companies are saying or implying that if only the digital giants were not so powerful, those giants would pay the media companies for links. The ACCC is pretty much saying this outright; it's the justification underlying the entire code.</p>
+<p>But in fact News Corp seems to have already declared that it really believes Google is right, and the correct price is $0.00.</p>
+<p>News Corp is saying it in code.</p>
+<p>Literally. "Code" is not a metaphor here. News Corp is disclosing its intent right there in its HTML code, the publicly-visible code in which web pages are published. If you know where to look, you can see it immediately.</p>
+<p>So here's where to look, and why.</p>
+<h2><p>The strangeness of pay-for-links</p></h2><p>
+I want first to spell out what's actually going on in Google's online news pages, because many people seem to misunderstand it. Google isn't "stealing" from News Corp, any more than it steals from any other sites it links to. It doesn't even run ads on the pages where it links to news stories. Despite what journalists keep writing, Google isn't "paying for content" or "running news" on its site. It's just linking to news stories, like this: <a href="https://www.news.com.au/national/victoria/politics/sportsbet-opens-betting-odds-for-dan-andrews-lockdown-press-conference/news-story/95a632cf446272c7f60b0a627cba3418">Betting agency Sportsbet has opened markets for Dan Andrews' much anticipated press conference to reveal whether the snap lockdown will ...</a></p>
+<p>As plenty of people have already found, it's actually very tough to make money producing list of links like this to other people' news. Google makes the vast majority of its profits from areas that News Corp never played in to start with. Heck, Google doesn't even run classified-ad sites of any note: Realestate, Carsales, eBay and a bunch of smaller players took that set of markets. And in an economic sense, this destruction of the classified oligopolies is what has destroyed newspapers' revenue streams, moreso than even the destruction of their news oligopolies.</p>
+<p>All Google's really guilty of in this space is offering links to a wider variety of news stories than News Corp would like. <a href="https://www.ben-evans.com/benedictevans/2021/2/17/paying-for-news">As the analyst Benedict Evans has put it</a>: "Google didn't take their money, any more than Boeing took money from the ocean liners. The internet destroyed the model." If Google had never existed, the classified-ad market – newspapers' "rivers of gold" – would still be worth far less today than 20 years ago: most of the customers would have moved to Realestate, Carsales, eBay and such.</p>
+<p>But Google does exist, and it makes a lot of money from something called "advertising". It's a very different sort of advertising, of course. Nevertheless, media companies such as News Corp reckon that if it's called advertising, it must have been taken from them – and so they deserve some of this new advertising money. Or, probably more accurately, they reckon the ACCC and the Australian government might be gullible enough to give them some of that money. Sadly, that reckoning seems correct.</p>
+<p>(One reason that it's seen so widely as correct is that journalists reflexively defend the ACCC position. It seems to them so obviously correct as to not merit investigation. At least in my experience, when you lay out the reasons why the ACCC is misguided, they retreat with unnerving haste to simply saying that newspapers are good, the ACCC is defending them, and that's that. It may be the greatest example of journalistic self-deception in existence.)<br/><h2>Robots.txt and HTML suggests what News Corp really believes about links</h2> <br/>Now, maybe you think that by posting links to News Corp news stories, Google is actually intruding on News Corp sites. And maybe you think that News Corp is powerless to stop that.</p>
+<p>In fact, the exact opposite is true. We know this because companies like News Corp can bar Google from their sites in an instant if they so choose, using nothing more complex that a two-line text file called "robots.txt". Here's an example of such a coded instruction to Google not to look at a specific folder on a web server:</p><pre><p>User-agent: Googlebot Disallow: /example-subfolder/</p></pre><p>
+Not too complicated, right?
+
+Yet News Corp and its colleagues never do use robots.txt in this way. They never do bar Google. That's because <em>they want the money that comes with Google traffic</em>.
+
+Now, maybe you know this, but you still think the text in the digital giants' links to news stories gives away too much for free.
+
+Again, we can check whether this is true by looking at what people do. One obvious place to look is the meta tag attribute values at news.com.au, which are publicly available right there in the site's easily-read HTML code.
+
+Meta tags are essentially labels which News Corp posts for the likes of Google and Facebook to read. Here News Corp gets to dictate just how Facebook, in particular, describes each news story. (I'll use Facebook as the example here only because Google uses a slightly more complicated mix of sources, but the principle is basically the same for both companies.)
+
+You can click "view source" on any web page and see these tags for yourself.
+
+So what does News Corp do when it has the chance to completely control how links are displayed, via meta tags?
+
+Sure enough, News is positively verbose about how it populates these values. Google usually describes a link in about 20 words, often stopping mid-sentence. In the first story I pulled up, News itself asks Facebook to use a full sentence of <em>39</em> words. On top of that, it specifies an image to be used with the link. (For those who can read HTML, I'm referring to the o<span class="tag"><span class="text">g:</span></span><span class="tag"><span class="text">description</span></span> and og:image values.)
+
+It's hard to escape the conclusion that News Corp on the one hand said to the previous federal government "digital giants should pay for descriptive links", while out of Josh Frydenberg's earshot it whispered to Google and Facebook themselves (in literal code): "We really, really want you to describe these links with as much detail as possible".
+
+Or to put it simply: Rupert Murdoch somehow talked the Morrison Government into ordering Google to promote Rupert's media content for him, and to <em>pay him</em> for doing him that favour.
+</p><h2><p>What a fair market solution would look like: $0 or less</p></h2>
+<p><a href="https://www.accc.gov.au/focus-areas/digital-platforms/news-media-bargaining-code">The ACCC has defended this bizarre arrangement</a> by claiming that the government had to act to repair the "power imbalance" in digital media. For instance, it suggested that Google didn't pay News Corp for ads because of the market power imbalance between Google and Murdoch.
+
+OK, stop sniggering about that last sentence, and ask yourself: how can we tell the true nature of that power imbalance?
+
+It turns out that the existing media landscape presents a way to solve that puzzle too. The question to ask here is: are there any places where News Corp and its fellow media firms would not be at such a market disadvantage?
+
+Well, how about the situation between News Corp and, say, Yahoo? When I ran the numbers on this, Yahoo parent company Altaba had a $US10 billion market capitalisation, a little lower than News Corp's $US13.7 billion.
+
+So how much does Yahoo pay to link to News Corp stories?
+
+Honestly, I don't know for absolute sure. But I think the amount is $US0 ($A0). And I suspect it's the same for the news pages at Microsoft Bing, and DuckDuckGo, and so on. (Yahoo and Duck may use Google News technology, but I don't think that changes the underlying case.)
+
+And I do know what the current rate is when Club Troppo links to News Ltd stories with 20-word descriptions. Here's one: <a href="https://www.news.com.au/national/victoria/politics/sportsbet-opens-betting-odds-for-dan-andrews-lockdown-press-conference/news-story/95a632cf446272c7f60b0a627cba3418">Betting agency Sportsbet has opened markets for Dan Andrews' much anticipated press conference to reveal whether the snap lockdown will ...</a>
+
+We pay exactly nothing for this.
+</p><h2><p>Prediction: no lawyer's letter for Club Troppo</p></h2><p>
+Maybe News Corp will write Club Troppo a lawyer's letter tomorrow asking us to take down that link above. But I don't think so.
+
+And I don't think it's just because we're too small to worry about. I think it's because News Corp – and other traditional media companies – know exactly who is getting the better of the arrangements (it's News Corp). News Corp justs pretends something different when it talks to the Australian government. And the ACCC and the government just haven't noticed.
+
+The government's actions are easily explained: all other things being equal, they want to do whatever Rupert wants them to do. Life really is a lot easier that way.
+
+The ACCC's actions, on the other hand, are most simply explained thus: the ACCC doesn't have much real expertise in the interface between law, economics and technology, and doesn't know how to get any.
+
+In its <a href="https://www.accc.gov.au/focus-areas/digital-platforms/news-media-bargaining-code/concepts-paper">2020 bargaining code concepts paper</a> last year, the ACCC even went so far last year as to invite suggestions on market benchmarks that would indicate an appropriate price for links "in circumstances where there is no bargaining imbalance". The ACCC said it "recognises that such benchmarks may be difficult to identify". Please let me know in the comments if I'm ignoring something here, but the prices paid by Yahoo, DuckDuckGo and Club Troppo – again, $0.00 – seem to me like they're saying something.
+
+It seems to me we can tell that the media companies' stated beliefs about link prices are not quite true. Their audible words say one thing, but their quiet, computer readable speech says something else. They're speaking it in code.
+
+</p><hr/>
+<p><strong>Update</strong>: Australian economist Joshua Gans, a competition expert now at Rotman, <a href="https://scroll.in/article/987370/australia-versus-facebook-the-governments-competition-policy-has-failed-to-encourage-competition">expected the news media bargaining code to simply entrench the big players</a>:
+
+"It will end up with the large digital platforms doing deals with the largest news outlets. Those deals will be multi-year lump-sum payments which enable everyone to go about their business.
+
+"There will be no new digital platforms, no new content providers, no more competition. The shareholders of the large digital platforms will be a few million dollars poorer and the shareholders of large Australian news outlets a few million dollars richer.
+
+"There will be no improvement in any competitive outcome whatsoever. As often happens in Australia, oligarchies will consolidate, and consumers will get nothing."</p></div>
+</div>
+<div id="comments"><h3 id="comments-title">18 Comments</h3><ol class="commentlist">
+<li class="comment" id="comment-673150">
+  <div id="div-comment-673150">
+    <div class="comment-author vcard">
+      <cite class="fn">Antonios</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 21, 2021</div>
+    <div class="comment-body"><p>Companies pay to get their links listed in prominent positions on Google search.</p>
+<p>They’re called ads, but it’s paying to be linked to for specific keywords, the price determined by an auction. The fact that the link is accompanied by text saying Ad actually lowers the value of the link, but still companies pay for the privilege.</p>
+<p>The idea that this should be inverted and Google pay newspapers for links when they can freely avoid being linked to should the newspapers wish is preposterous.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673196">
+  <div id="div-comment-673196">
+    <div class="comment-author vcard">
+      <cite class="fn">Graham Young</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 22, 2021</div>
+    <div class="comment-body"><p>Good argument. I think you could further it by looking at what SEO companies will pay to link to good quality sites. I get frequent requests for links, or for guest posts with links. They've never got past the price stage because none of these guys wants the word "sponsored" on their material, however, the cost of soliciting sites, writing content and then paying the site for hosting it, gives you a basis for making some calculations about what links are worth to the site being linked to.</p>
+<p>Of course the links on our site would be permanent, so you'd need to take that into account.</p>
+<p>They normally offer something like $50, and I generally tell them something like $150. As I say, I've had a number accept the price, but not the condition that any article has to be marked as sponsored, or that the links have to actually relate to the article in a meaningful way (or could be in the author's biog).</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673197">
+  <div id="div-comment-673197">
+    <div class="comment-author vcard">
+      <cite class="fn">David Walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 22, 2021</div>
+    <div class="comment-body"><p>Interesting data point. I take it that in your example, the site asking for payment is analogous to Google, and the site making the offer is analogous to News Corp.?</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673244">
+  <div id="div-comment-673244">
+    <div class="comment-author vcard">
+      <cite class="fn">John R walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 23, 2021</div>
+    <div class="comment-body"><p>David a <em>possible</em> data point, <br/>there are plenty of cases where photographers and others have taken action re copyright breaches against newspapers and the like for embedding links etc to their photos on other websites or in this case on instagram .<br/>( this kind of thing has been a long running bone of contention in the US and Europe)</p>
+<p>https://2d.laboratorium.net/post/620050481035804672/the-copyright-law-of-embedding-just-got-a-lot-more</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673258">
+  <div id="div-comment-673258">
+    <div class="comment-author vcard">
+      <cite class="fn">David Walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 23, 2021</div>
+    <div class="comment-body"><p>That's definitely a data point. Figuring out how its logic would apply here is interesting.</p>
+<p>Moral point first: If News Corp is populating OG:image tags, which only really exist as part of Facebook’s Open Graph protocol, it's hard to see that as anything but an invitation from News for Facebook to display images. Same for Twitter if they're populating twitter:image tags. Does that invitation extend to Google?</p>
+<p>But my guess is that Google would stop displaying the images if asked to do so. After all, Google has always observed the robots.txt protocol, which allows sites to stop Google displaying <em>anything at all</em>.</p>
+<p>Legal point second: To the extent that there's a copyright issue, News Corp or an independent photo supplier like AAP might argue that Google had not been granted a sub-licence to use those same images. Again, my guess is that Google would take them down if asked.</p>
+<p>Underlying point last: this seems to me to remain the same – News Corp is not seeking to assert anything like copyright. Indeed, it consistently avoids asserting any such right, because it does not want the result that would flow from asserting such a right.</p>
+<p>The last thing News Corp has ever sought is for Google to stop linking to its sites or displaying the contents of the public meta tags it provide. Its overall course of conduct now and in the past demonstrates a clear desire to have other sites, including Google, display what it provides. It just wants Google's cash.</p>
+<p>That is why the new law, and the ACCC's Sims, both make the economically ridiculous assertion that net value flows from News to Google. Every piece of economic evidence says net value flows the other way.</p>
+<p>[Note: Edited to change "value" to "net value".]</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673264">
+  <div id="div-comment-673264">
+    <div class="comment-author vcard">
+      <cite class="fn">John R Walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 23, 2021</div>
+    <div class="comment-body"><p>"Figuring out how its logic would apply here is interesting. "<br/>More than I can figure out- the cases I'm more familiar with involve people who really didnt want whoever from linking to or using their stuff, regardless of the money etc.</p>
+<p>Curious thing is as far as I can workout the Google News page doesn't display Ads ( am i Correct?) So an argument that Google is stealing  Newspaper Audiences and thus advertising revenues, from the newspaper sites seems a bit of a stretch to boot.</p>
+<p>Suspect that the big media types would actually be fairly happy if the likes of Google and Facebook simply disappeared, it was so much 'nicer' back in the old days .</p>
+<p>BTW The robot text is only a protocol , while it seems that Google doesn't display pages that have 'robot keep-out', there is no way of knowing that they dont still scan those pages- the data could still be useful-rewarding to Google.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673273">
+  <div id="div-comment-673273">
+    <div class="comment-author vcard">
+      <cite class="fn">David Walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 23, 2021</div>
+    <div class="comment-body"><p>"The cases I’m more familiar with involve people who really didn't want whoever from linking to or using their stuff, regardless of the money etc."</p>
+<p>Yep. Those are the cases <em>everyone</em> is used to solving. No-one has ever previously posed a case of a demand that a site pay to link to news. That's because it seemed quite pointless - until someone got a national government to back up their demand.</p>
+<p>This is one reason it takes so much work to convince most people that something strange is going on here.</p>
+<p>You are also correct that Google News doesn't run ads.</p>
+<p>And you are certainly correct that News Corp and others would be delighted to have Google and Facebook - indeed, all of web search - disappear. It was indeed much nicer back in the old days. I remember them fondly, along with my developing realisation through the mid-1990s that newspapers were about to become a declining industry.</p>
+<p>The funny thing is, though, that the disappearance of web search still would not help newspapers. Their economic fundamentals changed forever when their oligopoly control of news disappeared. To reverse that they would have to get a lot more help from governments - including somehow killing a lot of the world's websites. (First and foremost, they would need to kill all major weather forecast websites here and overseas.)</p>
+<p>BTW on protocols, web pages disallowed by robots.txt remain public. You have no way of knowing that <em>anyone</em> doesn't scan those pages for useful data. Anyone can. It's just not actually useful to Google to scan pages if they can't present results to users and have them click on something. It's the clicks that send Google useful signals.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673276">
+  <div id="div-comment-673276">
+    <div class="comment-author vcard">
+      <cite class="fn">John R walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 23, 2021</div>
+    <div class="comment-body"><p>Think it was their control of classifieds, least those that everybody turned to on Saturday for everything from second hand cars, share houses and kitchen hand jobs that really mattered. Do you disagree?</p>
+<p>Re what’s, useful to google.<br/>A few years ago new scientist published an interview with a senior scientist( can’t remember his name) for  google ,collecting absolutely vast amounts of examples of usages in various languages  is critical to developing better automatic translation systems.</p>
+<p>Data is core to everything re google.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673277">
+  <div id="div-comment-673277">
+    <div class="comment-author vcard">
+      <cite class="fn">John R walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 23, 2021</div>
+    <div class="comment-body"><p>BTW there is something of a whiff of government backed cartel about the proposed legislation, no ?</p>
+<p>And if the real value of the links in question is close to zero then there is also a hint of mandated redistribution about this biz, outside the tax act.</p>
+<p>Section 55 anybody? <br/>“Laws imposing taxation shall deal only with the imposition of taxation, and any provision therein dealing with any other matter shall be of no effect.”</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673288">
+  <div id="div-comment-673288">
+    <div class="comment-author vcard">
+      <cite class="fn">I am and will always be Not Trampis</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 24, 2021</div>
+    <div class="comment-body"><p>Thanks David. Really interesting article.
+good to see Troppo getting backs to its roots</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673289">
+  <div id="div-comment-673289">
+    <div class="comment-author vcard">
+      <cite class="fn">David Walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 24, 2021</div>
+    <div class="comment-body"><p>Hi John. This requires a party to make payments to another party. To have a tax requires payments to a government.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673293">
+  <div id="div-comment-673293">
+    <div class="comment-author vcard">
+      <cite class="fn">derrida derider</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 24, 2021</div>
+    <div class="comment-body"><p>Oh come on. The ACCC is only "responding to political reality" because "it's no use making recommendations in your report if it is just immediately buried" and "you can't influence policy if you get government offside". Criticising the inevitable intellectual shoddiness of that sort of report is a bit beside the point.</p>
+<p>Note these are words I have personally heard a number of times in a long career from the mouths of heads of supposedly "independent" inquiries.</p>
+<p>The government really really would like to have the near monopoly Murdoch and Nine medias continuing to cheer for them. So what the greedy buggers want, they get. Whether what they want is actually in their own long term interest is also a bit beside the point.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673294">
+  <div id="div-comment-673294">
+    <div class="comment-author vcard">
+      <cite class="fn">ianl</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 24, 2021</div>
+    <div class="comment-body"><p>It is true I have no respect for either the MSM or Facebook. None whatsoever; the pox on both their houses.</p>
+<p>In this particular stoush though, the weight of self-serving hypocrisy falls squarely on the MSM, with the Fed Govt coat-tailing it to avoid damaging, although dishonest, headlines.</p>
+<p>To show this, one simple question is avoided. If FB (or Google-bot) refuse to pay, why can people not go directly to the various MSM sites ? The answer to this suppressed question is obvious: if they do, they then have to subscribe, actually pay real money. Not nearly enough people are willing to do this for the tendentious rubbish they are then offered, so the MSM smartypants decided to try and make someone else pay for it.</p>
+<p>QED</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673301">
+  <div id="div-comment-673301">
+    <div class="comment-author vcard">
+      <cite class="fn">John R walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 24, 2021</div>
+    <div class="comment-body"><p>David a legal requirement to make payments for something that has , zero value is a kind of mandated redistribution ( and not a payment for goods services) and thus is fairly  taxlike .</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673303">
+  <div id="div-comment-673303">
+    <div class="comment-author vcard">
+      <cite class="fn">John R walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 24, 2021</div>
+    <div class="comment-body"><p>Not that simple, back in the 80s most of my friends bought the Saturday SMH for the classifieds did not read the actual paper. And the costs of placing an ad for ,housemate wanted were in hindsight fairly significant. <br/>In short decent journalism has nearly always involved a degree of cross subsidy.</p>
+<p>I don’t care for the governments solution however the problem is real enough.</p>
+<p>Curious aspect is that Facebook is truly unattractive to those under 40 is for “ageing  babyboomers “. I am too old to understand the various platforms the young turn to for the latest info, but they aren’t Facebook.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673350">
+  <div id="div-comment-673350">
+    <div class="comment-author vcard">
+      <cite class="fn">Chris Lloyd</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 25, 2021</div>
+    <div class="comment-body"><p>"That is why the new law, and the ACCC’s Sims, both make the economically ridiculous assertion that value flows from News to Google. Every piece of economic evidence says value flows the other way." Surely it flows both ways like any deal. Are you saying that it is net towards Newcorp? If so, why do Google not change Newscorp?</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673351">
+  <div id="div-comment-673351">
+    <div class="comment-author vcard">
+      <cite class="fn">Chris Lloyd</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 25, 2021</div>
+    <div class="comment-body"><p>Sorry. CHARGE newscorp.</p></div>
+  </div>
+</li>
+
+<li class="comment" id="comment-673353">
+  <div id="div-comment-673353">
+    <div class="comment-author vcard">
+      <cite class="fn">David Walker</cite>
+    </div>
+    <div class="comment-meta commentmetadata">February 25, 2021</div>
+    <div class="comment-body"><p>Thanks Chris. You are correct - NET value. I'll change the text.</p>
+<p>Why does Google not charge News Corp for links? It's partly technological, but mostly cultural – Internet culture, more than Google culture. To my knowledge, when Google started in the late '90s, no other major search engine had done this. Google certainly determined right at the start not to do so; it was a central element in the informal "don't be evil" mantra. Google carried that through when they started up Google News around 2003.</p>
+<p>Indeed, there's a scenario in which we look back on this 20 years from now and say that the worst aspect of the Australian government's policy was that it began to erode the "no-one pays for links" mentality.</p></div>
+  </div>
+</li>
+</ol></div>
+
+        </div>
+      </div>
+      
+    <div id="primary" class="widget-area" role="complementary">
+      <ul class="xoxo">
+        <li class="widget-container">
+          <h3 class="widget-title">About</h3>
+          <p>Economic, legal, political and social commentary.</p>
+        </li>
+        <li class="widget-container">
+          <h3 class="widget-title">Categories</h3>
+          <ul><li><a href="../../../../category/economics/index.html">Economics and public policy</a> <span class="widget-count">(1866)</span></li><li><a href="../../../../category/uncategorized/index.html">Uncategorized</a> <span class="widget-count">(1445)</span></li><li><a href="../../../../category/uncategorised/index.html">Uncategorised</a> <span class="widget-count">(1118)</span></li><li><a href="../../../../category/politics-national/index.html">Politics - national</a> <span class="widget-count">(1000)</span></li><li><a href="../../../../category/politics-international/index.html">Politics - international</a> <span class="widget-count">(624)</span></li><li><a href="../../../../category/history/index.html">History</a> <span class="widget-count">(397)</span></li><li><a href="../../../../category/law/index.html">Law</a> <span class="widget-count">(383)</span></li><li><a href="../../../../category/life/index.html">Life</a> <span class="widget-count">(383)</span></li><li><a href="../../../../category/philosophy/index.html">Philosophy</a> <span class="widget-count">(383)</span></li><li><a href="../../../../category/political-theory/index.html">Political theory</a> <span class="widget-count">(375)</span></li><li><a href="../../../../category/society/index.html">Society</a> <span class="widget-count">(300)</span></li><li><a href="../../../../category/missing-link/index.html">Missing Link</a> <span class="widget-count">(269)</span></li><li><a href="../../../../category/cultural-critique/index.html">Cultural Critique</a> <span class="widget-count">(262)</span></li><li><a href="../../../../category/it-and-internet/index.html">IT and Internet</a> <span class="widget-count">(258)</span></li><li><a href="../../../../category/media/index.html">Media</a> <span class="widget-count">(232)</span></li><li><a href="../../../../category/education/index.html">Education</a> <span class="widget-count">(219)</span></li><li><a href="../../../../category/humour/index.html">Humour</a> <span class="widget-count">(206)</span></li><li><a href="../../../../category/films-and-tv/index.html">Films and TV</a> <span class="widget-count">(193)</span></li></ul>
+        </li>
+        <li class="widget-container">
+          <h3 class="widget-title">Posts by Author</h3>
+          <ul><li><a href="../../../../author/nicholas-gruen/index.html">Nicholas Gruen</a> <span class="widget-count">(3063)</span></li><li><a href="../../../../author/ken-parish/index.html">Ken Parish</a> <span class="widget-count">(1440)</span></li><li><a href="../../../../author/don-arthur/index.html">Don Arthur</a> <span class="widget-count">(505)</span></li><li><a href="../../../../author/paul-frijters/index.html">Paul Frijters</a> <span class="widget-count">(347)</span></li><li><a href="../../../../author/mark-bahnisch/index.html">Mark Bahnisch</a> <span class="widget-count">(272)</span></li><li><a href="../../../../author/james-farrell/index.html">James Farrell</a> <span class="widget-count">(159)</span></li><li><a href="../../../../author/tony-harris/index.html">Tony Harris</a> <span class="widget-count">(152)</span></li><li><a href="../../../../author/geoff-honnor/index.html">Geoff Honnor</a> <span class="widget-count">(136)</span></li><li><a href="../../../../author/david-walker/index.html">David Walker</a> <span class="widget-count">(124)</span></li><li><a href="../../../../author/richard-tsukamasa-green/index.html">Richard Tsukamasa Green</a> <span class="widget-count">(121)</span></li><li><a href="../../../../author/fred-argy/index.html">Fred Argy</a> <span class="widget-count">(113)</span></li><li><a href="../../../../author/wicking/index.html">Wicking</a> <span class="widget-count">(110)</span></li><li><a href="../../../../author/wayne-wood/index.html">Wayne Wood</a> <span class="widget-count">(105)</span></li><li><a href="../../../../author/rex-ringschott/index.html">Rex Ringschott</a> <span class="widget-count">(95)</span></li><li><a href="../../../../author/sophie-masson/index.html">Sophie Masson</a> <span class="widget-count">(67)</span></li><li><a href="../../../../author/cam/index.html">Cam</a> <span class="widget-count">(63)</span></li><li><a href="../../../../author/ingolf-eide/index.html">Ingolf Eide</a> <span class="widget-count">(52)</span></li><li><a href="../../../../author/scott-wickstein/index.html">Scott Wickstein</a> <span class="widget-count">(43)</span></li><li><a href="../../../../author/unknown/index.html">Unknown</a> <span class="widget-count">(34)</span></li><li><a href="../../../../author/chris-lloyd/index.html">Chris Lloyd</a> <span class="widget-count">(33)</span></li><li><a href="../../../../author/paul-bamford-aka-gummo-t/index.html">Paul Bamford (aka Gummo T)</a> <span class="widget-count">(33)</span></li><li><a href="../../../../author/stephen-hill/index.html">Stephen Hill</a> <span class="widget-count">(24)</span></li><li><a href="../../../../author/john-r-walker/index.html">john r walker</a> <span class="widget-count">(20)</span></li><li><a href="../../../../author/patrick/index.html">Patrick</a> <span class="widget-count">(20)</span></li><li><a href="../../../../author/rafe-champion/index.html">Rafe Champion</a> <span class="widget-count">(18)</span></li><li><a href="../../../../author/saul-eslake/index.html">Saul Eslake</a> <span class="widget-count">(16)</span></li><li><a href="../../../../author/shaun-cronin/index.html">Shaun Cronin</a> <span class="widget-count">(16)</span></li><li><a href="../../../../author/roop-sandhu/index.html">Roop Sandhu</a> <span class="widget-count">(13)</span></li><li><a href="../../../../author/dr-troppo/index.html">Dr Troppo</a> <span class="widget-count">(12)</span></li><li><a href="../../../../author/peter-whiteford/index.html">Peter Whiteford</a> <span class="widget-count">(12)</span></li><li><a href="../../../../author/antonios-sarhanis/index.html">Antonios Sarhanis</a> <span class="widget-count">(10)</span></li><li><a href="../../../../author/bruce-bradbury/index.html">Bruce Bradbury</a> <span class="widget-count">(10)</span></li><li><a href="../../../../author/backroom-girl/index.html">Backroom Girl</a> <span class="widget-count">(7)</span></li><li><a href="../../../../author/john-walker/index.html">john Walker</a> <span class="widget-count">(7)</span></li><li><a href="../../../../author/danielle-mccredden/index.html">Danielle McCredden</a> <span class="widget-count">(6)</span></li><li><a href="../../../../author/b-model-baby/index.html">B Model Baby</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/damian-jeffree/index.html">Damian Jeffree</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/gaby/index.html">Gaby</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/julia/index.html">Julia</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/seamus-c/index.html">Seamus C</a> <span class="widget-count">(5)</span></li><li><a href="../../../../author/jc/index.html">JC</a> <span class="widget-count">(4)</span></li><li><a href="../../../../author/luke-slawomirski/index.html">Luke Slawomirski</a> <span class="widget-count">(4)</span></li><li><a href="../../../../author/paul-watson/index.html">Paul Watson</a> <span class="widget-count">(4)</span></li><li><a href="../../../../author/james-wheeldon/index.html">James Wheeldon</a> <span class="widget-count">(3)</span></li><li><a href="../../../../author/jen/index.html">Jen</a> <span class="widget-count">(3)</span></li><li><a href="../../../../author/paul-martin/index.html">Paul Martin</a> <span class="widget-count">(3)</span></li><li><a href="../../../../author/darlene/index.html">Darlene</a> <span class="widget-count">(2)</span></li><li><a href="../../../../author/davidsligar/index.html">davidsligar</a> <span class="widget-count">(2)</span></li><li><a href="../../../../author/ellenbroad/index.html">ellenbroad</a> <span class="widget-count">(2)</span></li><li><a href="../../../../author/mike-waller/index.html">Mike Waller</a> <span class="widget-count">(2)</span></li><li><a href="../../../../author/david-coles/index.html">David Coles</a> <span class="widget-count">(1)</span></li><li><a href="../../../../author/joshua-gans/index.html">Joshua Gans</a> <span class="widget-count">(1)</span></li><li><a href="../../../../author/meika-loofs-samorzewski/index.html">meika loofs samorzewski</a> <span class="widget-count">(1)</span></li><li><a href="../../../../author/sam-roggeveen/index.html">Sam Roggeveen</a> <span class="widget-count">(1)</span></li></ul>
+        </li>
+      </ul>
+    </div>
+
+    </div>
+    <div id="footer" role="contentinfo">
+      <div id="colophon">
+        <div id="site-info"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

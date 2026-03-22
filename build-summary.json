@@ -1,0 +1,22 @@
+{
+  "posts": 7316,
+  "pages": 5,
+  "categories": 89,
+  "months": 265,
+  "authors": 54,
+  "comments": 94987,
+  "copied_uploads": 478,
+  "missing_uploads": [
+    "2006/08/12NAT_JACKMAN_wideweb__470x258,0.jpg",
+    "2006/08/voip.gif",
+    "2006/09/0828webst_roadToll.jpg",
+    "2006/09/Humphrey Go-cart.gif",
+    "2006/09/football_history.pdf",
+    "2007/03/wdcc-euro-mikey-i.jpg",
+    "2007/04/tn.pdf",
+    "2007/08/interest-rates.jpg",
+    "2007/09/paul-joh.swf",
+    "2017/06/images.jpg"
+  ],
+  "output": "/Users/anto/Downloads/troppoTrick/clubtroppo-sql-static-20260322"
+}
