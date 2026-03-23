@@ -1576,9 +1576,14 @@ div.menu {
   color: #5a5245;
   font-size: 13px;
   font-weight: normal;
+  line-height: 1.5;
   margin-bottom: 16px;
   padding: 10px 14px;
   text-align: center;
+}
+
+.static-banner a {
+  color: inherit;
 }
 
 .archive-index-list,
