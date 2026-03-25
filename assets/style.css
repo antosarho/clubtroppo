@@ -1586,6 +1586,24 @@ div.menu {
   color: inherit;
 }
 
+.category-toggle {
+  margin-top: 8px;
+}
+
+.category-toggle summary {
+  color: #21759b;
+  cursor: pointer;
+  list-style: none;
+}
+
+.category-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.category-toggle ul {
+  margin-top: 8px;
+}
+
 .archive-index-list,
 .category-index-list {
   list-style: none;
