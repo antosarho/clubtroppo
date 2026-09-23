@@ -31,10 +31,12 @@
   <div class="entry-meta"><span class="meta-prep meta-prep-author">Posted on</span> <a href="index.html" rel="bookmark"><span class="entry-date">May 7, 2004</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a href="../../../../author/ken-parish/index.html">Ken Parish</a></span></div>
   <div class="entry-utility"><span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../../../../category/uncategorised/index.html">Uncategorised</a></span></div>
   <div class="entry-content"><p>I think I'm finally sufficiently motivated to be bothered implementing the MT-Blacklist feature to block the increasing number of spam "comments"  appearing on <i>Troppo Armadillo</i>.  My current best intention is to begin entering IP addresses in the Blacklist starting next time a wave of spam begins appearing (it seems to happen in rotation every week or so, presumably because that'd the rotation time of the web robots the spammers use.</p>
-<p>I'm also indebted to <a href="http://www.robertcorr.net/blog/archives/000116.shtml">Rob Corr</a> for highlighting an innovation called <a href="http://english-2163081833.spampoison.com/">Spam Poison</a>, which explains its function/effect in the following terms:<br/><blockquote>E-mail collecting robots will be sent in an infinite loop and will get dynamically generated fake e-mail addresses, adding enormous quantities of bogus data to the databases of the spammers, thus polluting those files so badly that they become essentially useless. They will have to clean out their databases or will receive a LOT of returned email </blockquote><br/><a href="http://English-2209466317.SpamPoison.com">Fight Spam! Click Here!</a>  (I hope it doesn't have a similar effect on Google).</p></div>
+<p>I'm also indebted to <a href="http://www.robertcorr.net/blog/archives/000116.shtml">Rob Corr</a> for highlighting an innovation called <a href="http://english-2163081833.spampoison.com/">Spam Poison</a>, which explains its function/effect in the following terms:</p>
+<blockquote><p>E-mail collecting robots will be sent in an infinite loop and will get dynamically generated fake e-mail addresses, adding enormous quantities of bogus data to the databases of the spammers, thus polluting those files so badly that they become essentially useless. They will have to clean out their databases or will receive a LOT of returned email </p></blockquote>
+<p><a href="http://English-2209466317.SpamPoison.com">Fight Spam! Click Here!</a>  (I hope it doesn't have a similar effect on Google).</p>
 </div>
-<div id="comments"><h3 id="comments-title">7 Comments</h3><ol class="commentlist">
-<li class="comment" id="comment-8026">
+</div>
+<div id="comments"><h3 id="comments-title">7 Comments</h3><ol class="commentlist"><li class="depth-1 comment" id="comment-8026">
   <div id="div-comment-8026">
     <div class="comment-author vcard">
       <cite class="fn">Robert</cite>
@@ -42,45 +44,41 @@
     <div class="comment-meta commentmetadata">May 7, 2004</div>
     <div class="comment-body"><p>Blocking IP addresses with MT-Blacklist might not be particularly effective, as spammers frequently change the address they post comments from. However, blocking the sites they link to seems to work well, so make sure to regularly update your blacklist. I understand there are some scripts available to automatically update the blacklist at a preset time (daily or weekly) but I haven't had much success installing them.</p>
 <p>Unfortunately, I can't see Spam Poison being effective for too long. Spammers will soon modify their bots so that they never follow a link to the spampoison.com domain. Until then, however, we should be able to waste their time, effort and resources.</p>
-<p>The only solution I can envisage is a script that people can host on their own server, operating on the same principles as Spam Poison. That way, it would be virtually impossible to block all the spambot-trapping URLs, and even if they did it would mean that the spambots no longer visit your site.</p></div>
+<p>The only solution I can envisage is a script that people can host on their own server, operating on the same principles as Spam Poison. That way, it would be virtually impossible to block all the spambot-trapping URLs, and even if they did it would mean that the spambots no longer visit your site.</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-8027">
+</li><li class="depth-1 comment" id="comment-8027">
   <div id="div-comment-8027">
     <div class="comment-author vcard">
       <cite class="fn">Francisco</cite>
     </div>
     <div class="comment-meta commentmetadata">May 7, 2004</div>
-    <div class="comment-body"><p>SpamPoison was developed after I have analyzed several commercial spambots. In general, there are some parameters the spammer can use to control the spambot action. E.g. number of e-mail addresses from a domain, number of links and depth, etc. SpamPoison faked e-mail addresses are generated using domains owned by spammers (listed in The SpamHaus Project). Each page has different number of e-mail addresses and unique URL (generated subdomain + over 200 domains registered worldwide and owned by our company. Unfortunately, it's not possible a single site to implement a script similar to SpamPoison because the loop can't be done using the same domain. Regarding the "spampoison.com" link, we are changing periodically the domain. In fact, some weeks ago we were using "spamsaver.com". However, the main objective is not trap the big spammers (a police issue) but destimulate the eventual user who intend to use his broadband access to collect e-mails and do spam. As the domains exists, each message requires a tcp conection between mail servers, spending a lot of time and resources. And as the faked e-mail addresses use domains from spammers, is a case of spammers spamming spammers.
-Francisco
-PS: Please excuse my sorry English</p></div>
+    <div class="comment-body"><p>SpamPoison was developed after I have analyzed several commercial spambots. In general, there are some parameters the spammer can use to control the spambot action. E.g. number of e-mail addresses from a domain, number of links and depth, etc. SpamPoison faked e-mail addresses are generated using domains owned by spammers (listed in The SpamHaus Project). Each page has different number of e-mail addresses and unique URL (generated subdomain + over 200 domains registered worldwide and owned by our company. Unfortunately, it's not possible a single site to implement a script similar to SpamPoison because the loop can't be done using the same domain. Regarding the "spampoison.com" link, we are changing periodically the domain. In fact, some weeks ago we were using "spamsaver.com". However, the main objective is not trap the big spammers (a police issue) but destimulate the eventual user who intend to use his broadband access to collect e-mails and do spam. As the domains exists, each message requires a tcp conection between mail servers, spending a lot of time and resources. And as the faked e-mail addresses use domains from spammers, is a case of spammers spamming spammers.<br/>
+Francisco<br/>
+PS: Please excuse my sorry English</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-8028">
+</li><li class="depth-1 comment" id="comment-8028">
   <div id="div-comment-8028">
     <div class="comment-author vcard">
       <cite class="fn">Geoff Honnor</cite>
     </div>
     <div class="comment-meta commentmetadata">May 7, 2004</div>
-    <div class="comment-body"><p>It occurs to me, belatedly, that my last post probably didn't help in lowering the spam rate...apologies.</p></div>
+    <div class="comment-body"><p>It occurs to me, belatedly, that my last post probably didn't help in lowering the spam rate...apologies.</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-8029">
+</li><li class="depth-1 comment" id="comment-8029">
   <div id="div-comment-8029">
     <div class="comment-author vcard">
       <cite class="fn">Jay Allen</cite>
     </div>
     <div class="comment-meta commentmetadata">May 7, 2004</div>
     <div class="comment-body"><p>Blocking IP addresses with MT-Blacklist might not be particularly effective</p>
-<p>Robert is mostly correct.  More accurately blocking IP addresses with MT-Blacklist will be wholly ineffective because MT-Blacklist is not an IP address blacklist.</p>
-<p>Go and read the troubleshooting section of the online manual (http://www.jayallen.org/projects/mt-blacklist/latest/) and you will find the question you would soon be asking if you started putting IP addresses on your blacklist.</p></div>
+<p>Robert is mostly correct.  More accurately blocking IP addresses with MT-Blacklist will be wholly ineffective because MT-Blacklist is not an IP address blacklist.  </p>
+<p>Go and read the troubleshooting section of the online manual (http://www.jayallen.org/projects/mt-blacklist/latest/) and you will find the question you would soon be asking if you started putting IP addresses on your blacklist.</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-8030">
+</li><li class="depth-1 comment" id="comment-8030">
   <div id="div-comment-8030">
     <div class="comment-author vcard">
       <cite class="fn">Robert</cite>
@@ -88,30 +86,28 @@ PS: Please excuse my sorry English</p></div>
     <div class="comment-meta commentmetadata">May 8, 2004</div>
     <div class="comment-body"><p>Wow, the creators of both Spam Poison and MT-Blacklist rocked up to comment! Thanks, guys!</p>
 <p>Fransisco, I wasn't aware that you use more than one domain. That was my main concern, and I'm certainly impressed that you've registered 200!</p>
-<p>Thanks for providing a great community service.</p></div>
+<p>Thanks for providing a great community service.</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-8031">
+</li><li class="depth-1 comment" id="comment-8031">
   <div id="div-comment-8031">
     <div class="comment-author vcard">
       <cite class="fn">Scott Wickstein</cite>
     </div>
     <div class="comment-meta commentmetadata">May 9, 2004</div>
-    <div class="comment-body"><p>I have implemented MT- Blacklist on the whole domain- I'm not sure how to configure it so that the other bloggers can use it though. If you get a spam comment, please forward it to me and I'll deal with it.</p></div>
+    <div class="comment-body"><p>I have implemented MT- Blacklist on the whole domain- I'm not sure how to configure it so that the other bloggers can use it though. If you get a spam comment, please forward it to me and I'll deal with it.</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-8032">
+</li><li class="depth-1 comment" id="comment-8032">
   <div id="div-comment-8032">
     <div class="comment-author vcard">
       <cite class="fn">Yobbo</cite>
     </div>
     <div class="comment-meta commentmetadata">May 9, 2004</div>
-    <div class="comment-body"><p>Ken: You should talk to Gary Gravett about this, he seems to have solved the spam problem on our domain. I don't know how though.</p></div>
+    <div class="comment-body"><p>Ken: You should talk to Gary Gravett about this, he seems to have solved the spam problem on our domain. I don't know how though.</p>
+</div>
   </div>
-</li>
-</ol></div>
+</li></ol></div>
 
         </div>
       </div>

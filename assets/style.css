@@ -852,6 +852,11 @@ img.alignright,
 img.aligncenter {
 	margin-bottom: 12px;
 }
+.entry-content .embed-youtube,
+.entry-content .embed-vimeo,
+.entry-content iframe {
+	max-width: 100%;
+}
 .wp-caption {
 	background: #f1f1f1;
 	line-height: 18px;
@@ -1054,6 +1059,24 @@ a.comment-edit-link:hover {
 .commentlist .children li {
 	border: none;
 	margin: 0;
+}
+.commentlist .children > li.comment {
+	padding-left: 0;
+	margin-top: 32px;
+	margin-bottom: 8px;
+	margin-left: 70px;
+}
+.commentlist .children .children > li.comment {
+	margin-left: 25px;
+}
+.commentlist .children > li.comment .comment-author::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 6px;
+	vertical-align: -2px;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23777777' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 14 4 9 9 4'/%3E%3Cpath d='M20 20v-7a4 4 0 0 0-4-4H4'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 .nopassword,
 .nocomments {

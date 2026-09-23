@@ -30,74 +30,143 @@
   <h1 class="entry-title">Benford&#x27;s Law: around 30% of the first digits in many real world data-sets are &quot;1&quot;.</h1>
   <div class="entry-meta"><span class="meta-prep meta-prep-author">Posted on</span> <a href="index.html" rel="bookmark"><span class="entry-date">August 3, 2011</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a href="../../../../author/nicholas-gruen/index.html">Nicholas Gruen</a></span></div>
   <div class="entry-utility"><span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../../../../category/geeky-musings/index.html">Geeky Musings</a></span></div>
-  <div class="entry-content"><p>Yes, folks it's Benford's Law - from <a href="http://en.wikipedia.org/wiki/Benford's_law">Kaggle's website</a>.
-<br/><blockquote>One fun aspect of working with real data is that you get to observe real-life phenomenon. For example, <a href="http://en.wikipedia.org/wiki/Benford%27s_Law">Benford's Law</a> (also known as the "first-digit law") states:</blockquote></p>
+  <div class="entry-content"><p>Yes, folks it's Benford's Law - from <a href="http://en.wikipedia.org/wiki/Benford's_law">Kaggle's website</a>.</p>
+<blockquote><p>One fun aspect of working with real data is that you get to observe real-life phenomenon. For example, <a href="http://en.wikipedia.org/wiki/Benford%27s_Law">Benford's Law</a> (also known as the "first-digit law") states:</p>
 <p>"in lists of numbers from many (but not all) real-life sources of data, the leading digit is distributed in a specific, non-uniform way. According to this law, the first digit is 1 about 30% of the time, and larger digits occur as the leading digit with lower and lower frequency, to the point where 9 as a first digit occurs less than 5% of the time."</p>
-<p>A simple SQL query on the training dataset gives us the raw data with which we can compare the data:
-<br/><table border="1"> <br/><tbody> <br/><tr> <br/><th>digit</th> <br/><th>count</th> <br/><th> actual_probability</th> <br/><th>benford_expected_probability</th> <br/><th>abs diff</th> <br/></tr> <br/><tr> <br/><td>1</td> <br/><td>3368866</td> <br/><td> 27.9%</td> <br/><td>30.1%</td> <br/><td>2.3%</td> <br/></tr> <br/><tr> <br/><td>2</td> <br/><td>1912850</td> <br/><td> 15.8%</td> <br/><td>17.6%</td> <br/><td>1.8%</td> <br/></tr> <br/><tr> <br/><td>3</td> <br/><td>1483366</td> <br/><td> 12.3%</td> <br/><td>12.5%</td> <br/><td>0.2%</td> <br/></tr> <br/><tr> <br/><td>4</td> <br/><td>1258157</td> <br/><td> 10.4%</td> <br/><td>9.7%</td> <br/><td>0.7%</td> <br/></tr> <br/><tr> <br/><td>5</td> <br/><td>1109766</td> <br/><td> 9.2%</td> <br/><td>7.9%</td> <br/><td>1.3%</td> <br/></tr> <br/><tr> <br/><td>6</td> <br/><td>933048</td> <br/><td> 7.7%</td> <br/><td>6.7%</td> <br/><td>1.0%</td> <br/></tr> <br/><tr> <br/><td>7</td> <br/><td>787636</td> <br/><td> 6.5%</td> <br/><td>5.8%</td> <br/><td>0.7%</td> <br/></tr> <br/><tr> <br/><td>8</td> <br/><td>668351</td> <br/><td> 5.5%</td> <br/><td>5.1%</td> <br/><td>0.4%</td> <br/></tr> <br/><tr> <br/><td>9</td> <br/><td>573359</td> <br/><td> 4.7%</td> <br/><td>4.6%</td> <br/><td>0.1%</td> <br/></tr> <br/></tbody> <br/></table> <br/>Sure enough, the data from millions of shopping visits demonstrates the validity of this law.</p>
-<p>I just thought this was an interesting application of something you hear about all the time in statistics discussions.</p></div>
+<p>A simple SQL query on the training dataset gives us the raw data with which we can compare the data:</p>
+<table border="1">
+<tbody>
+<tr>
+<th>digit</th>
+<th>count</th>
+<th> actual_probability</th>
+<th>benford_expected_probability</th>
+<th>abs diff</th>
+</tr>
+<tr>
+<td>1</td>
+<td>3368866</td>
+<td> 27.9%</td>
+<td>30.1%</td>
+<td>2.3%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1912850</td>
+<td> 15.8%</td>
+<td>17.6%</td>
+<td>1.8%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1483366</td>
+<td> 12.3%</td>
+<td>12.5%</td>
+<td>0.2%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1258157</td>
+<td> 10.4%</td>
+<td>9.7%</td>
+<td>0.7%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1109766</td>
+<td> 9.2%</td>
+<td>7.9%</td>
+<td>1.3%</td>
+</tr>
+<tr>
+<td>6</td>
+<td>933048</td>
+<td> 7.7%</td>
+<td>6.7%</td>
+<td>1.0%</td>
+</tr>
+<tr>
+<td>7</td>
+<td>787636</td>
+<td> 6.5%</td>
+<td>5.8%</td>
+<td>0.7%</td>
+</tr>
+<tr>
+<td>8</td>
+<td>668351</td>
+<td> 5.5%</td>
+<td>5.1%</td>
+<td>0.4%</td>
+</tr>
+<tr>
+<td>9</td>
+<td>573359</td>
+<td> 4.7%</td>
+<td>4.6%</td>
+<td>0.1%</td>
+</tr>
+</tbody>
+</table>
+<p>Sure enough, the data from millions of shopping visits demonstrates the validity of this law.</p>
+<p>I just thought this was an interesting application of something you hear about all the time in statistics discussions.</p></blockquote>
 </div>
-<div id="comments"><h3 id="comments-title">6 Comments</h3><ol class="commentlist">
-<li class="comment" id="comment-438139">
+</div>
+<div id="comments"><h3 id="comments-title">6 Comments</h3><ol class="commentlist"><li class="depth-1 comment" id="comment-438139">
   <div id="div-comment-438139">
     <div class="comment-author vcard">
       <cite class="fn">desipis</cite>
     </div>
     <div class="comment-meta commentmetadata">August 3, 2011</div>
-    <div class="comment-body"><p>If you express all your numbers in binary, the first digit is always 1.</p></div>
+    <div class="comment-body"><p>If you express all your numbers in binary, the first digit is always 1.</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-438183">
+</li><li class="depth-1 comment" id="comment-438183">
   <div id="div-comment-438183">
     <div class="comment-author vcard">
       <cite class="fn">derrida derider</cite>
     </div>
     <div class="comment-meta commentmetadata">August 3, 2011</div>
-    <div class="comment-body"><p>Benford's Law is well known as a way of testing whether data has been fabricated - it's caught many cheaters in science and the social sciences.  Unfortunately it's become well known enough that the cheaters are adapting to it ...</p></div>
+    <div class="comment-body"><p>Benford's Law is well known as a way of testing whether data has been fabricated - it's caught many cheaters in science and the social sciences.  Unfortunately it's become well known enough that the cheaters are adapting to it ...</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-438232">
+</li><li class="depth-1 comment" id="comment-438232">
   <div id="div-comment-438232">
     <div class="comment-author vcard">
       <cite class="fn">Rex</cite>
     </div>
     <div class="comment-meta commentmetadata">August 4, 2011</div>
-    <div class="comment-body"><p>Clearly '1' is very productive digit. Punching well above its weight in world affairs.    Have there been any studies done to see if some of the slacker numbers could either shape up or ship out?</p></div>
+    <div class="comment-body"><p>Clearly '1' is very productive digit. Punching well above its weight in world affairs.    Have there been any studies done to see if some of the slacker numbers could either shape up or ship out?</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-438262">
+</li><li class="depth-1 comment" id="comment-438262">
   <div id="div-comment-438262">
     <div class="comment-author vcard">
       <cite class="fn">Nicholas Gruen</cite>
     </div>
     <div class="comment-meta commentmetadata">August 4, 2011</div>
-    <div class="comment-body"><p>That's a good angle Rex. I think we should have an international commission on it. Benford would also suggest that when they eventually come to privatise the digits, '1' will have the highest market cap - that's where the smart money will be.</p></div>
+    <div class="comment-body"><p>That's a good angle Rex. I think we should have an international commission on it. Benford would also suggest that when they eventually come to privatise the digits, '1' will have the highest market cap - that's where the smart money will be.</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-438336">
+</li><li class="depth-1 comment" id="comment-438336">
   <div id="div-comment-438336">
     <div class="comment-author vcard">
       <cite class="fn">Rex</cite>
     </div>
     <div class="comment-meta commentmetadata">August 5, 2011</div>
-    <div class="comment-body"><p>That's an even better angle Nicholas.  I wonder if Peter Foster has a prospectus out yet?</p></div>
+    <div class="comment-body"><p>That's an even better angle Nicholas.  I wonder if Peter Foster has a prospectus out yet?</p>
+</div>
   </div>
-</li>
-
-<li class="comment" id="comment-438349">
+</li><li class="depth-1 comment" id="comment-438349">
   <div id="div-comment-438349">
     <div class="comment-author vcard">
       <cite class="fn">Nicholas Gruen</cite>
     </div>
     <div class="comment-meta commentmetadata">August 5, 2011</div>
-    <div class="comment-body"><p>No 1 also has the best marketing lines.  Who wants to be No 2?</p></div>
+    <div class="comment-body"><p>No 1 also has the best marketing lines.  Who wants to be No 2?</p>
+</div>
   </div>
-</li>
-</ol></div>
+</li></ol></div>
 
         </div>
       </div>
